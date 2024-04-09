@@ -7,29 +7,29 @@ import { TbNurse } from "react-icons/tb";
 
 const cardItems = [
   {
-    title: "Private Nursing Care Services",
+    title: "Private Nursing",
     para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
   },
   {
-    title: "24 Hours In-Home Care",
+    title: "24 Hours In-Home",
     para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
   },
   {
-    title: "Post-Hospitalization Home Health Care",
+    title: "Post-Hospitalization",
     para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
   },
   {
-    title: "Palliative Care Services",
+    title: "Palliative Care",
     para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
   },
 ];
 
 const ComperhensiveService = () => {
   return (
-    <section>
+    <section className="comp">
       <Container>
-        <Row className="justify-content-md-center">
-          <Col className="comperhensive_header">
+        <Row>
+          <Col className="header ">
             <h2 className="fs-3 fw-semibold">Our Comprehensive Services</h2>
             <p>
               At Carehub Healthcare, we offer a wide range of comprehensive
@@ -37,15 +37,22 @@ const ComperhensiveService = () => {
             </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="d-flex flex-wrap g-4">
           {cardItems.map((item) => {
             return (
-              <Col xs={12} md={6} lg={3}>
-                <Card className="comperhensive_card border-0">
+              <Col xs={12} md={6} lg={3} className="d-flex flex-column">
+                <Card
+                  className="comperhensive_card flex-grow-1"
+                  style={{ borderColor: "#f5faf7" }}
+                >
                   <Card.Body>
                     <TbNurse className="comperhensive_icon" />
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Text>{item.para}</Card.Text>
+                    <Card.Title className="comp_service-title">
+                      <h6>{item.title}</h6>
+                    </Card.Title>
+                    <Card.Text className="comp_service-para">
+                      {item.para}
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>

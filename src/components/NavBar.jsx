@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import Logo from "../assets/carehub-logo.jpg";
+import { useMediaQuery } from "react-responsive";
 
 const services = [
   "Private at Home Nursing Care Services",
@@ -19,26 +20,37 @@ const services = [
 ];
 
 export default function NavBar() {
+  const isMobile = useMediaQuery({ maxWidth: 991 });
   return (
-    <Navbar expand="lg" className="bg-white d-flex py-0">
+    <Navbar expand="lg" className="py-0">
       <Container>
         <Navbar.Brand>
           <img src={Logo} className="logo" alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          className={isMobile && "mobile-toggle"}
+        >
           <Nav className="mx-auto nav_item">
             <Nav.Link as={Link} to={"/"}>
               Home
             </Nav.Link>
             <Nav.Link href="#link">About Us</Nav.Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
+            <NavDropdown
+              title="Services"
+              id="basic-nav-dropdown"
+              className="dropdown"
+            >
               {services.map((item) => {
                 return <NavDropdown.Item>{item}</NavDropdown.Item>;
               })}
             </NavDropdown>
           </Nav>
-          <button type="button" className="custom-button border border-0">
+          <button
+            type="button"
+            className={isMobile ? "custom-button mt-3" : "custom-button"}
+          >
             Contact Us
           </button>
         </Navbar.Collapse>

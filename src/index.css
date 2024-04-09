@@ -37,8 +37,9 @@ h6 {
 h1 {
   font-size: 2.2rem;
 }
-h2 {
+.h2 {
   font-size: 1.4rem;
+  font-weight: 600;
 }
 h3 {
   font-size: 1.1rem;
@@ -66,6 +67,32 @@ p {
 .custom-ul li {
   color: rgba(255, 255, 255, 0.856);
 }
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+.header h2 {
+  color: var(--color-primary-text);
+  margin-bottom: 0.8rem;
+}
+.header p {
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-secondary-text);
+  width: 70ch;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .header p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .header {
+    margin-bottom: 1.8rem;
+  }
+}
 
 /*------------------ Top Bar-------------------------*/
 
@@ -84,6 +111,13 @@ p {
   gap: 1rem;
   font-weight: 500;
 }
+.mobile-toggle {
+  height: 100vh;
+}
+.mobile-toggle .nav_item {
+  gap: 0.2rem;
+}
+
 .custom-button {
   background-color: aquamarine;
   padding: 0.5rem 0.8rem;
@@ -93,55 +127,53 @@ p {
   font-weight: 500;
   color: white;
 }
-
-.banner {
-  height: auto;
+.dropdown {
+  font-family: "Open Sans", sans-serif;
+}
+/*------------------ Banner -------------------------*/
+.banner img {
+  width: 100%;
 }
 .banner_caption {
   position: absolute;
-  width: 50%;
-  display: block;
-  margin-inline: auto;
+  text-align: center;
   top: 40%;
 }
 .banner_caption p {
   color: white;
 }
-@media (max-width: 1024px) {
-  .banner_caption {
-    position: absolute;
-    top: 30%;
-    width: 70%;
-    margin-inline: auto;
+
+@media (min-width: 991px) {
+  .banner {
+    height: 460px;
   }
 }
-@media (max-width: 768px) {
-  .banner {
-    height: 300px; /* Adjusted height for mobile devices */
-  }
-  .banner img {
-    height: 100%;
-  }
+@media (max-width: 475px) {
   .banner_caption {
     position: absolute;
-    top: 16%;
-    width: 70%;
-    margin-inline: auto;
+    top: 25%;
   }
 }
 
 /*------------------ Comperhensive Services -------------------------*/
-.comperhensive_header {
-  text-align: center;
-}
-.comperhensive_header p {
-  margin: 0.6rem auto 3rem;
-}
+
 .comperhensive_card {
   text-align: center;
-  padding: 1.4rem 0;
-  border: none;
-  outline: none;
+  padding: 2rem 1rem;
+  border-radius: var(--radius-2);
+}
+.comp_service-title h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-primary-text);
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+.comp_service-para {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: var(--color-secondary-text);
+  font-family: "Open Sans", sans-serif;
 }
 .comperhensive_card:hover {
   transition: var(--transition);
@@ -150,7 +182,7 @@ p {
 }
 .comperhensive_icon {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   color: var(--color-light-green);
 }
 @media (min-width: 768px) {
@@ -181,18 +213,90 @@ p {
 
 /*------------------ Service -------------------------*/
 
+.service {
+  background-color: var(--color-bg-1);
+}
+.service_card {
+  padding: 0.8rem;
+  border-radius: var(--radius-2);
+}
 .service_img {
   border-radius: var(--radius-2);
 }
 .service_btn {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   background: none;
   color: var(--color-light-green);
 }
+
+.service2_card {
+  position: relative;
+  height: 360px;
+}
+.service2_card-body p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+.service2_card-body h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.service2_card-body {
+  position: absolute;
+  top: 36%;
+  background-image: url(./assets/service_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-white);
+  border-radius: var(--radius-2);
+  margin: 0 0.6rem;
+  padding: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.service2_card-body:hover {
+  background-color: var(--color-light-green);
+  color: var(--color-white);
+}
+.service2_card-body:hover p {
+  color: var(--color-white);
+}
+.service2_card-body:hover .comperhensive_icon {
+  color: var(--color-white);
+}
+.service2_card-body:hover .service2_btn {
+  color: var(--color-white);
+}
+.service2_btn {
+  background-color: transparent;
+  font-weight: 600;
+  color: var(--color-light-green);
+}
+@media (max-width: 475px) {
+  .service2_card-body {
+    position: absolute;
+    top: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .service2_card-body {
+    position: absolute;
+    top: 50%;
+    margin: 0 1rem;
+  }
+  .service2_card {
+    position: relative;
+    height: 400px;
+  }
+}
+
+/*------------------ Assistance -------------------------*/
+
 .assistance {
   padding: 5rem 0;
-  background-color: var(--color-bg-1);
 }
 .assistence_icon {
   color: var(--color-light-green);
