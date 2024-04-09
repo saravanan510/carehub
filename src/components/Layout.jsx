@@ -3,6 +3,8 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
+import "animate.css/animate.css";
+
 const Layout = () => {
   return (
     <>

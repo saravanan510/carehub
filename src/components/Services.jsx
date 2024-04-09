@@ -5,6 +5,9 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { TbNurse } from "react-icons/tb";
+
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
+
 import service_1 from "../assets/Service_1.jpg";
 import service_2 from "../assets/Service_2.jpg";
 import service_3 from "../assets/Service_3.jpg";
@@ -71,7 +74,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="service">
+    <section className="service ">
       <Container>
         <Row>
           <Col className="header ">
@@ -99,26 +102,29 @@ const Services = () => {
               //     </Card.Body>
               //   </Card>
               // </Col>
+
               <Col xs={12} md={6} lg={4} xl={3}>
-                <div className="service2_card">
-                  <img
-                    src={service.image}
-                    className="service_img"
-                    width="100%"
-                  />
-                  <div className="service2_card-body">
-                    <TbNurse className="service2_icon" />
-                    <h5>{service.title}</h5>
-                    <p>
-                      At Carehub Healthcare, we offer a wide range of
-                      comprehensive services.
-                    </p>
-                    <button className="service2_btn">
-                      Learn More
-                      <FaLongArrowAltRight className="ms-2" />
-                    </button>
+                <AnimatedOnScroll animationIn="animate__slideInUp">
+                  <div className="service2_card animate__animated animate__slideInUp">
+                    <img
+                      src={service.image}
+                      className="service_img"
+                      width="100%"
+                    />
+                    <div className="service2_card-body">
+                      <TbNurse className="service2_icon" />
+                      <h5>{service.title}</h5>
+                      <p>
+                        At Carehub Healthcare, we offer a wide range of
+                        comprehensive services.
+                      </p>
+                      <button className="service2_btn">
+                        Learn More
+                        <FaLongArrowAltRight className="ms-2" />
+                      </button>
+                    </div>
                   </div>
-                </div>
+                </AnimatedOnScroll>
               </Col>
             );
           })}
