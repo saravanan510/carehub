@@ -41,10 +41,7 @@ const ComperhensiveService = () => {
           {cardItems.map((item) => {
             return (
               <Col xs={12} md={6} lg={3} className="d-flex flex-column">
-                <Card
-                  className="comperhensive_card flex-grow-1"
-                  style={{ borderColor: "#f5faf7" }}
-                >
+                <Card className="comperhensive_card flex-grow-1">
                   <Card.Body>
                     <TbNurse className="comperhensive_icon" />
                     <Card.Title className="comp_service-title">
