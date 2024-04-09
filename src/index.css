@@ -225,7 +225,11 @@ p {
   background: none;
   color: var(--color-light-green);
 }
-
+.service2_icon {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-light-green);
+}
 .service2_card {
   position: relative;
   height: 360px;
@@ -264,13 +268,17 @@ p {
   color: var(--color-white);
 }
 .service2_card-body:hover .service2_btn {
-  color: var(--color-white);
+  color: #ffd500;
+}
+.service2_card-body:hover .service2_icon {
+  color: #ffd500;
 }
 .service2_btn {
   background-color: transparent;
   font-weight: 600;
   color: var(--color-light-green);
 }
+
 @media (max-width: 475px) {
   .service2_card-body {
     position: absolute;

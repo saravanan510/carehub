@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { TbNurse } from "react-icons/tb";
 import service_1 from "../assets/Service_1.jpg";
 import service_2 from "../assets/Service_2.jpg";
@@ -18,7 +19,7 @@ import service_10 from "../assets/Service_10.jpg";
 const services = [
   {
     image: service_1,
-    title: "Private Home Nursing",
+    title: "Home Nursing",
     para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
   },
   {
@@ -106,13 +107,16 @@ const Services = () => {
                     width="100%"
                   />
                   <div className="service2_card-body">
-                    <TbNurse className="comperhensive_icon" />
+                    <TbNurse className="service2_icon" />
                     <h5>{service.title}</h5>
                     <p>
                       At Carehub Healthcare, we offer a wide range of
                       comprehensive services.
                     </p>
-                    <button className="service2_btn">Learn More</button>
+                    <button className="service2_btn">
+                      Learn More
+                      <FaLongArrowAltRight className="ms-2" />
+                    </button>
                   </div>
                 </div>
               </Col>
