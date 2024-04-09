@@ -3,20 +3,20 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
-import Logo from "../assets/carehub-logo.jpg";
+import Logo from "../assets/logo.png";
 import { useMediaQuery } from "react-responsive";
 
 const services = [
-  "Private at Home Nursing Care Services",
+  "Home Nursing",
   "24 Hours In-Home Care",
-  "Ventilator Care at Home",
-  "Post Hospitalization Home Health Care services",
-  "Nurses that come to your house",
-  "Palliative care Services at home",
+  "Ventilator Care",
+  "Post Hospitalization",
+  "Nurses Visit",
+  "Palliative care",
   "Elderly Care Services",
-  "Post Operative Care Services at Home",
-  "Pediatric Palliative care Services at Home",
-  "Paralytic Care Services at home",
+  "Post Operative Care",
+  "Pediatric Palliative care",
+  "Paralytic Care",
 ];
 
 export default function NavBar() {
@@ -32,7 +32,7 @@ export default function NavBar() {
           id="basic-navbar-nav"
           className={isMobile && "mobile-toggle"}
         >
-          <Nav className="mx-auto nav_item">
+          <Nav className="ms-auto me-5 nav_item">
             <Nav.Link as={Link} to={"/"}>
               Home
             </Nav.Link>
