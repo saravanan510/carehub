@@ -5,7 +5,7 @@ import FAQ from "../assets/faq.png";
 const Broucher = () => {
   return (
     <section>
-      <Container fluid>
+      <Container>
         <Row>
           <Col className="broucher_header">
             <h2 className="fs-3 fw-semibold">Broucher</h2>

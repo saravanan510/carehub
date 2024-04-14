@@ -19,7 +19,7 @@ function UncontrolledExample() {
         )}
 
         <Carousel.Caption className="banner_caption">
-          <h1 className={isMobile ? "fs-4 fw-semibold" : "fw-semibold"}>
+          <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
             Compassion Is At The Heart Of Our Care
           </h1>
         </Carousel.Caption>
@@ -31,7 +31,7 @@ function UncontrolledExample() {
           <img src={Banner_2} alt="First slide" className="" />
         )}
         <Carousel.Caption className="banner_caption">
-          <h1 className={isMobile ? "fs-4 fw-semibold" : "fw-semibold"}>
+          <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
             24 Hours In-Home Care
           </h1>
         </Carousel.Caption>
@@ -43,7 +43,7 @@ function UncontrolledExample() {
           <img src={Banner_3} alt="First slide" className="" />
         )}
         <Carousel.Caption className="banner_caption">
-          <h1 className={isMobile ? "fs-4 fw-semibold" : "fw-semibold"}>
+          <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
             Post-Hospitalization Home Health Care
           </h1>
         </Carousel.Caption>

@@ -150,7 +150,7 @@ a {
 @media (max-width: 475px) {
   .banner_caption {
     position: absolute;
-    top: 36%;
+    top: 40%;
   }
 }
 
@@ -361,7 +361,6 @@ a {
 
 .broucher_header {
   padding: 6rem;
-  margin: 4rem;
 }
 
 @media (max-width: 768px) {
@@ -412,16 +411,21 @@ a {
   }
 }
 
+/*------------------ Services Page -------------------------*/
+
 .ServicePage_list-list {
   list-style-type: none;
 }
 .servicepage_banner {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
   justify-content: center;
-  height: 300px;
-  width: 100%;
-  background-image: url("./assets/PrivateNursing-Banner.jpg");
+  height: 200px;
+  background-color: #003f4e;
+}
+.servicepage_banner p {
+  color: white;
 }
 .otherservices {
   padding: 1.5rem 2rem;
@@ -476,4 +480,41 @@ input {
   .booking {
     margin-inline: 1.5rem;
   }
+}
+
+ul.breadcrumb {
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color: #f5faf7;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: white;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: rgba(255, 255, 255, 0.719);
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.tabStyle {
+  background-color: none;
+}
+.tabContent {
+  padding: 1.6rem 0;
+}
+.tabStyle .nav-link.active {
+  border-bottom: 2px solid #009b45;
+  color: #009b45 !important;
+}
+.tabStyle .nav-link {
+  border-bottom: 2px solid #009b45;
+  color: #009b45 !important;
 }
