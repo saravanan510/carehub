@@ -9,8 +9,9 @@ import { useMediaQuery } from "react-responsive";
 
 function UncontrolledExample() {
   const isMobile = useMediaQuery({ maxWidth: 475 });
+  const controls = !isMobile;
   return (
-    <Carousel>
+    <Carousel controls={controls}>
       <Carousel.Item className="banner">
         {isMobile ? (
           <img src={Mobile_Banner_1} alt="First slide" className="" />
