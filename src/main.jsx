@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import PrivateNursing from "./pages/PrivateNursing";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "/service",
+        element: <PrivateNursing />,
       },
     ],
   },

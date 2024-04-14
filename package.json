@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "animate.css": "^4.1.1",
     "animate.css-react": "^1.1.0",
     "bootstrap": "^5.3.3",

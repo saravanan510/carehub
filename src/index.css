@@ -400,3 +400,69 @@ p {
     margin-bottom: 1.4rem;
   }
 }
+
+.ServicePage_list-list {
+  list-style-type: none;
+}
+.servicepage_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  background-image: url("./assets/PrivateNursing-Banner.jpg");
+}
+.otherservices {
+  padding: 1.5rem 2rem;
+  background-color: #f9f9f9;
+}
+.otherservices ul {
+  padding: 0;
+}
+.otherservices li {
+  padding: 0.2rem;
+}
+.otherservices li a {
+  text-decoration: none;
+  color: var(--color-blue);
+  font-weight: 500;
+}
+.booking {
+  padding: 1.5rem 2rem;
+  background-color: #f9f9f9;
+}
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+input {
+  height: 2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: var(--radius-1);
+  padding: 0.2rem;
+}
+.servicedrop {
+  height: 2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: var(--radius-1);
+  padding: 0.2rem;
+}
+.formbtn {
+  height: 2rem;
+  width: 100%;
+  background-color: #009b45;
+  color: white;
+}
+@media (max-width: 425px) {
+  .otherservices {
+    margin-inline: 1.5rem;
+  }
+  .booking {
+    margin-inline: 1.5rem;
+  }
+}
