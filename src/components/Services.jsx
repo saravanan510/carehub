@@ -18,6 +18,7 @@ import service_7 from "../assets/Service_7.jpg";
 import service_8 from "../assets/Service_8.jpg";
 import service_9 from "../assets/Service_9.jpg";
 import service_10 from "../assets/Service_10.jpg";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -119,7 +120,7 @@ const Services = () => {
                         comprehensive services.
                       </p>
                       <button className="service2_btn">
-                        Learn More
+                        <Link to={"/service"}>Learn More</Link>
                         <FaLongArrowAltRight className="ms-2" />
                       </button>
                     </div>

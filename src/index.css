@@ -84,6 +84,9 @@ p {
   width: 70ch;
   line-height: 1.5;
 }
+a {
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .header p {
     font-size: 0.9rem;
@@ -212,6 +215,11 @@ p {
 .service {
   background-color: var(--color-bg-1);
 }
+.service a {
+  text-decoration: none;
+  color: var(--color-light-green);
+}
+
 .service_card {
   padding: 0.8rem;
   border-radius: var(--radius-2);
@@ -271,6 +279,9 @@ p {
   color: #ffd500;
 }
 .service2_card-body:hover .service2_icon {
+  color: #ffd500;
+}
+.service2_card-body:hover a {
   color: #ffd500;
 }
 .service2_btn {
