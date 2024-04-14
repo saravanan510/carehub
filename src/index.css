@@ -136,7 +136,7 @@ a {
 }
 /*------------------ Banner -------------------------*/
 .banner img {
-  width: 100%;
+  height: 80vh;
 }
 .banner_caption {
   position: absolute;
@@ -151,6 +151,9 @@ a {
   .banner_caption {
     position: absolute;
     top: 40%;
+  }
+  .banner img {
+    height: 80vh;
   }
 }
 
