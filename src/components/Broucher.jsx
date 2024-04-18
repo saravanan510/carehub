@@ -13,9 +13,11 @@ const Broucher = () => {
               At Carehub Healthcare, we offer a wide range of comprehensive
               services designed to cater to the unique needs of our clients.
             </p>
-            <button type="button" className="custom-button border border-0">
-              Downloads
-            </button>
+            <a href="../assets/Broucher.pdf" download="Broucher.pdf">
+              <button type="button" class="custom-button border border-0">
+                Download
+              </button>
+            </a>
           </Col>
           <Col md={12} lg={6}>
             <img src={FAQ} width="100%" alt="" srcset="" />

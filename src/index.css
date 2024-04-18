@@ -383,6 +383,9 @@ a {
 .broucher_header {
   padding: 6rem;
 }
+.broucher_header h2 {
+  color: var(--color-primary-text);
+}
 
 @media (max-width: 768px) {
   .broucher_header {
