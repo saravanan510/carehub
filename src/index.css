@@ -543,6 +543,19 @@ ul.breadcrumb li a:hover {
   color: #009b45 !important;
 }
 
+.service_page_features_list {
+  list-style-type: none;
+  padding: 0;
+}
+.service_page_features_list li {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+}
+.service_feature {
+  font-weight: 600;
+  color: var(--color-primary-text);
+}
 /*------------------ AboutUs Page -------------------------*/
 
 .about_img {

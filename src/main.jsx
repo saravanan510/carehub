@@ -7,6 +7,7 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PrivateNursing from "./pages/PrivateNursing";
 import ContactUs from "./pages/ContactUs";
+import AboutUs from "./components/Assistence";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />,
+      },
+      {
+        path: "/aboutus",
+        element: <AboutUs />,
       },
     ],
   },

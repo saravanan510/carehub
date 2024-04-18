@@ -6,18 +6,48 @@ import PrivateNursing_img from "../assets/PrivateNursing-img.jpg";
 import { Link } from "react-router-dom";
 
 const services = [
-  "Home Nursing",
-  "24 Hours In-Home Care",
-  "Ventilator Care",
-  "Post Hospitalization",
-  "Nurses Visit",
-  "Palliative care",
-  "Elderly Care Services",
-  "Post Operative Care",
-  "Pediatric Palliative care",
-  "Paralytic Care",
+  {
+    name: "Private Nursing",
+    link: "/service",
+  },
+  {
+    name: "24 Hours In-Home Care",
+    link: "/service",
+  },
+  {
+    name: "Ventilator Care",
+    link: "/service",
+  },
+  {
+    name: "Post Hospitalization",
+    link: "/service",
+  },
+  {
+    name: "Nurses Visit",
+    link: "/service",
+  },
+  {
+    name: "Palliative care",
+    link: "/service",
+  },
+  {
+    name: "Elderly Care Services",
+    link: "/service",
+  },
+  {
+    name: "Post Operative Care",
+    link: "/service",
+  },
+  {
+    name: "Pediatric Palliative care",
+    link: "/service",
+  },
+  {
+    name: "Paralytic Care",
+    link: "/service",
+  },
 ];
-const ServicePage_list = () => {
+const PrivateNursing_list = () => {
   return (
     <>
       <section>
@@ -32,7 +62,7 @@ const ServicePage_list = () => {
                 {services.map((ele, i) => {
                   return (
                     <li key={i}>
-                      <Link>{ele}</Link>
+                      <Link to={ele.link}>{ele.name}</Link>
                     </li>
                   );
                 })}
@@ -45,4 +75,4 @@ const ServicePage_list = () => {
   );
 };
 
-export default ServicePage_list;
+export default PrivateNursing_list;

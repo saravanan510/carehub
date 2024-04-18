@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import emailjs from "@emailjs/browser";
+import FeatureIcon from "../assets/features.svg";
 // service_rfhez58
 // service_rfhez58
 const services = [
@@ -18,7 +19,7 @@ const services = [
   "Paralytic Care",
 ];
 
-const ServicePage_details = () => {
+const PrivateNursing_details = () => {
   const [form, setForm] = useState({
     fullName: "",
     email: "",
@@ -54,20 +55,105 @@ const ServicePage_details = () => {
         <Container>
           <Row className="g-5">
             <Col className="text-start pe-5" lg={9}>
-              <h2 className="fs-3 fw-semibold">Private Nursing</h2>
+              <h2 className="fs-3 fw-semibold" style={{ color: "#012a4a" }}>
+                Private Nursing
+              </h2>
               <p>
                 At Carehub Healthcare, we offer a wide range of comprehensive
                 services designed to cater to the unique needs of our clients.
                 At Carehub Healthcare, we offer a wide range of comprehensive
                 services designed to cater to the unique needs of our clients.
               </p>
-              <p>
-                At Carehub Healthcare, we offer a wide range of comprehensive
-                services designed to cater to the unique needs of our clients.
-                At Carehub Healthcare, we offer a wide range of comprehensive
-                services designed to cater to the unique needs of our clients.
-              </p>
-              <h4 className="fs-5 fw-semibold">Private Nursing</h4>
+
+              <h4 className="fs-5 fw-semibold" style={{ color: "#012a4a" }}>
+                Private Nursing
+              </h4>
+              <Row>
+                <Col sm={12} lg={4}>
+                  <ul className="service_page_features_list">
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                  </ul>
+                </Col>
+                <Col sm={12} lg={4}>
+                  <ul className="service_page_features_list">
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                  </ul>
+                </Col>
+                <Col sm={12} lg={4}>
+                  <ul className="service_page_features_list">
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                    <li>
+                      <img src={FeatureIcon} />
+                      <p className="service_feature m-0 fw-semibold">
+                        Carehub Healthcare
+                      </p>
+                    </li>
+                  </ul>
+                </Col>
+              </Row>
               <p>
                 At Carehub Healthcare, we offer a wide range of comprehensive
                 services designed to cater to the unique needs of our clients.
@@ -149,4 +235,4 @@ const ServicePage_details = () => {
   );
 };
 
-export default ServicePage_details;
+export default PrivateNursing_details;
