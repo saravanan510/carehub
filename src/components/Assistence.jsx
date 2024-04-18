@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Assistance from "../assets/faq.png";
-import { LuCheckCircle } from "react-icons/lu";
+import list_icon from "../assets/list-icon.svg";
 import React from "react";
 
 const AboutUs = () => {
@@ -19,7 +19,7 @@ const AboutUs = () => {
                 <div>
                   <div className="about_list">
                     <div className="about_icon">
-                      <LuCheckCircle />
+                      <img src={list_icon} />
                     </div>
                     <p>
                       Support with medication management/administration, enteral
@@ -29,7 +29,7 @@ const AboutUs = () => {
                   </div>
                   <div className="about_list">
                     <div className="about_icon">
-                      <LuCheckCircle />
+                      <img src={list_icon} />
                     </div>
                     <p>
                       Personalized care plans tailored to your unique needs,
@@ -38,7 +38,7 @@ const AboutUs = () => {
                   </div>
                   <div className="about_list">
                     <div className="about_icon">
-                      <LuCheckCircle />
+                      <img src={list_icon} />
                     </div>
                     <p>
                       Specialist nurses in various fields including: cancer
@@ -50,7 +50,7 @@ const AboutUs = () => {
                   </div>
                   <div className="about_list">
                     <div className="about_icon">
-                      <LuCheckCircle />
+                      <img src={list_icon} />
                     </div>
                     <p>
                       Accompaniment to and from medical appointments, advice and
@@ -60,7 +60,7 @@ const AboutUs = () => {
                   </div>
                   <div className="about_list">
                     <div className="about_icon">
-                      <LuCheckCircle />
+                      <img src={list_icon} />
                     </div>
                     <p>
                       Expert guidance, emotional support and continual

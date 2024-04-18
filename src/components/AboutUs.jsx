@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Assistance from "../assets/faq.png";
-import { LuCheckCircle } from "react-icons/lu";
+import list_icon from "../assets/list-icon.svg";
 import React from "react";
 
 const AboutUs = () => {
@@ -34,7 +34,9 @@ const AboutUs = () => {
                 </p>
                 <div className="about_sub">
                   <div className="about_list">
-                    <LuCheckCircle className="about_icon" size={32} />
+                    <div className="about_icon">
+                      <img src={list_icon} />
+                    </div>
                     <p>
                       Individualised care from a dedicated nurse or team of
                       nurses, catering to your care requirements, whether for a
@@ -43,7 +45,9 @@ const AboutUs = () => {
                     </p>
                   </div>
                   <div className="about_list">
-                    <LuCheckCircle className="about_icon" size={32} />
+                    <div className="about_icon">
+                      <img src={list_icon} />
+                    </div>
                     <p>
                       Individualised care from a dedicated nurse or team of
                       nurses, catering to your care requirements, whether for a
