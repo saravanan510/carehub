@@ -6,6 +6,7 @@ import Mobile_Banner_1 from "../assets/Mobile_Banner_1.jpg";
 import Mobile_Banner_2 from "../assets/Mobile_Banner_2.jpg";
 import Mobile_Banner_3 from "../assets/Mobile_Banner_3.jpg";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 function UncontrolledExample() {
   const isMobile = useMediaQuery({ maxWidth: 475 });
@@ -23,7 +24,9 @@ function UncontrolledExample() {
           <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
             Private at Home Nursing Care Services in UAE
           </h1>
-          <button className="banner_btn fw-semibold">Book Appointment</button>
+          <Link to={"/contact"}>
+            <button className="banner_btn fw-semibold">Book Appointment</button>{" "}
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="banner">
@@ -36,7 +39,9 @@ function UncontrolledExample() {
           <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
             Private at Home Nursing Care Services in UAE
           </h1>
-          <button className="banner_btn fw-semibold">Book Appointment</button>
+          <Link to={"/contact"}>
+            <button className="banner_btn fw-semibold">Book Appointment</button>{" "}
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="banner">
@@ -49,7 +54,10 @@ function UncontrolledExample() {
           <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
             Private at Home Nursing Care Services in UAE
           </h1>
-          <button className="banner_btn fw-semibold">Book Appointment</button>
+
+          <Link to={"/contact"}>
+            <button className="banner_btn fw-semibold">Book Appointment</button>{" "}
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

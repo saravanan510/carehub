@@ -7,16 +7,46 @@ import Logo from "../assets/logo.png";
 import { useMediaQuery } from "react-responsive";
 
 const services = [
-  "Home Nursing",
-  "24 Hours In-Home Care",
-  "Ventilator Care",
-  "Post Hospitalization",
-  "Nurses Visit",
-  "Palliative care",
-  "Elderly Care Services",
-  "Post Operative Care",
-  "Pediatric Palliative care",
-  "Paralytic Care",
+  {
+    name: "Home Nursing",
+    link: "/service",
+  },
+  {
+    name: "24 Hours In-Home Care",
+    link: "/service",
+  },
+  {
+    name: "Ventilator Care",
+    link: "/service",
+  },
+  {
+    name: "Post Hospitalization",
+    link: "/service",
+  },
+  {
+    name: "Nurses Visit",
+    link: "/service",
+  },
+  {
+    name: "Palliative care",
+    link: "/service",
+  },
+  {
+    name: "Elderly Care Services",
+    link: "/service",
+  },
+  {
+    name: "Post Operative Care",
+    link: "/service",
+  },
+  {
+    name: "Pediatric Palliative care",
+    link: "/service",
+  },
+  {
+    name: "Paralytic Care",
+    link: "/service",
+  },
 ];
 
 export default function NavBar() {
@@ -45,7 +75,11 @@ export default function NavBar() {
               className="dropdown"
             >
               {services.map((item) => {
-                return <NavDropdown.Item>{item}</NavDropdown.Item>;
+                return (
+                  <NavDropdown.Item className="nav_service_link">
+                    <Link to={item.link}>{item.name}</Link>
+                  </NavDropdown.Item>
+                );
               })}
             </NavDropdown>
           </Nav>

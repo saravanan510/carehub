@@ -139,6 +139,10 @@ a {
 .dropdown {
   font-family: "Open Sans", sans-serif;
 }
+.nav_service_link a {
+  text-decoration: none;
+  color: var(--color-primary-text);
+}
 /*------------------ Banner -------------------------*/
 .banner img {
   height: 80vh;
@@ -575,5 +579,8 @@ ul.breadcrumb li a:hover {
   .contact_form {
     width: 80%;
     margin-inline: auto;
+  }
+  .about_img img {
+    width: 100%;
   }
 }

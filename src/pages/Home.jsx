@@ -14,10 +14,7 @@ const Home = () => {
     <>
       <HeroBanners />
       <ComperhensiveService />
-      <div id="#about">
-        <AboutUs />
-      </div>
-
+      <AboutUs />
       <Services />
       <Assistence />
       <Testimonial />
