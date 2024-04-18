@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PrivateNursing from "./pages/PrivateNursing";
+import ContactUs from "./pages/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <PrivateNursing />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
       },
     ],
   },

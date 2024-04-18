@@ -36,7 +36,9 @@ export default function NavBar() {
             <Nav.Link as={Link} to={"/"}>
               Home
             </Nav.Link>
-            <Nav.Link href="#link">About Us</Nav.Link>
+            <Nav.Link as={Link} to={"/"}>
+              About Us
+            </Nav.Link>
             <NavDropdown
               title="Services"
               id="basic-nav-dropdown"
@@ -51,7 +53,7 @@ export default function NavBar() {
             type="button"
             className={isMobile ? "custom-button mt-3" : "custom-button"}
           >
-            Contact Us
+            <Link to={"/contact"}>Contact </Link>
           </button>
         </Navbar.Collapse>
       </Container>

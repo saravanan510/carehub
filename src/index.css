@@ -97,6 +97,11 @@ a {
   }
 }
 
+.custom-button a {
+  text-decoration: none;
+  color: white;
+}
+
 /*------------------ Top Bar-------------------------*/
 
 .topBar {
@@ -558,4 +563,17 @@ ul.breadcrumb li a:hover {
 }
 .about_icon {
   margin-right: 1rem;
+}
+
+/*------------------ Contact Page -------------------------*/
+
+.contact_form {
+  width: 40%;
+  margin-inline: auto;
+}
+@media (max-width: 425px) {
+  .contact_form {
+    width: 80%;
+    margin-inline: auto;
+  }
 }
