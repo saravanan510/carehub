@@ -66,7 +66,7 @@ export default function NavBar() {
             <Nav.Link as={Link} to={"/"}>
               Home
             </Nav.Link>
-            <Nav.Link href="#about">About Us</Nav.Link>
+            <Nav.Link>About Us</Nav.Link>
             <NavDropdown
               title="Services"
               id="basic-nav-dropdown"
