@@ -2,61 +2,56 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Assistance from "../assets/faq.png";
-import Nav from "react-bootstrap/Nav";
+import { LuCheckCircle } from "react-icons/lu";
 import React from "react";
-import Tab from "react-bootstrap/Tab";
+
 const AboutUs = () => {
   return (
     <section className="assistance">
       <Container>
-        <Row>
-          <Col className="assistence_img">
+        <Row className="g-5">
+          <Col lg={4} className="about_img">
             <img src={Assistance} className=" rounded" />
           </Col>
 
-          <Col>
+          <Col lg={8}>
             <Row className="mb-4">
               <Col>
-                <h2 className="fs-3 fw-semibold">About Us</h2>
+                <h2 className="about_heading fs-3 fw-semibold">
+                  Why choose a Carehub Healthcare Private Nurse?
+                </h2>
                 <p>
-                  At Carehub Healthcare, we offer a wide range of comprehensive
-                  services designed to cater to the unique needs of our clients.
+                  Choosing 1-2-1 private nursing care with Carehub Healthcare
+                  ensures you have a smooth recovery, peace of mind and have
+                  continued involvement of family and friends as you wish.  As
+                  one of the leading providers of private home nursing care in
+                  UAE, we take great pride in delivering superior levels of care
+                  and support to clients living with a range of medical
+                  conditions. Renowned for our clinical expertise and
+                  compassionate approach, our nurses are specialists in their
+                  field and work with you to improve your health, manage medical
+                  conditions, promote independence and enhance your wellbeing.
                 </p>
-              </Col>
-            </Row>
-            <Row className="">
-              <Col>
-                <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-                  <Row>
-                    <Col>
-                      <Nav variant="underline" className="">
-                        <Nav.Item className="tabStyle">
-                          <Nav.Link eventKey="first">Mission</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item className="tabStyle">
-                          <Nav.Link eventKey="second">Vission</Nav.Link>
-                        </Nav.Item>
-                      </Nav>
-
-                      <Tab.Content className="tabContent">
-                        <Tab.Pane eventKey="first">
-                          <p>
-                            At Carehub Healthcare, we offer a wide range of
-                            comprehensive services designed to cater to the
-                            unique needs of our clients.
-                          </p>
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="second">
-                          <p>
-                            At Carehub Healthcare, we offer a wide range of
-                            comprehensive services designed to cater to the
-                            unique needs of our clients.
-                          </p>
-                        </Tab.Pane>
-                      </Tab.Content>
-                    </Col>
-                  </Row>
-                </Tab.Container>
+                <div className="about_sub">
+                  <div className="about_list">
+                    <LuCheckCircle className="about_icon" size={32} />
+                    <p>
+                      Individualised care from a dedicated nurse or team of
+                      nurses, catering to your care requirements, whether for a
+                      short visit, live in care, overnight cover or 24 hour
+                      support.
+                    </p>
+                  </div>
+                  <div className="about_list">
+                    <LuCheckCircle className="about_icon" size={32} />
+                    <p>
+                      Individualised care from a dedicated nurse or team of
+                      nurses, catering to your care requirements, whether for a
+                      short visit, live in care, overnight cover or 24 hour
+                      support.
+                    </p>
+                  </div>
+                </div>
               </Col>
             </Row>
           </Col>

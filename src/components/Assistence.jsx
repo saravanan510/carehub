@@ -2,48 +2,76 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Assistance from "../assets/faq.png";
-import { LiaUserNurseSolid } from "react-icons/lia";
-const Assistence = () => {
+import { LuCheckCircle } from "react-icons/lu";
+import React from "react";
+
+const AboutUs = () => {
   return (
     <section className="assistance">
       <Container>
-        <Row>
+        <Row className="g-5">
           <Col lg={8}>
             <Row className="mb-4">
               <Col>
-                <h2 className="fs-3 fw-semibold">What Service We Offer</h2>
-                <p>
-                  At Carehub Healthcare, we offer a wide range of comprehensive
-                  services designed to cater to the unique needs of our clients.
-                </p>
-              </Col>
-            </Row>
-            <Row className="">
-              <Col className="pe-6" md={6} sm={12}>
-                <LiaUserNurseSolid className="fs-1 mb-3 assistence_icon" />
-                <h3 className="fs-6 fw-semibold">
-                  Private Nursing Care Services
-                </h3>
-                <p>
-                  At Carehub Healthcare, we offer a wide range of comprehensive
-                  services.
-                </p>
-              </Col>
-
-              <Col md={6} sm={12}>
-                <LiaUserNurseSolid className="fs-1 mb-3 assistence_icon" />
-                <h3 className="fs-6 fw-semibold">
-                  Private Nursing Care Services
-                </h3>
-                <p>
-                  At Carehub Healthcare, we offer a wide range of comprehensive
-                  services.
-                </p>
+                <h2 className="about_heading fs-3 mb-3 fw-semibold">
+                  Key Benefits of Choosing Carehub Healthcare
+                </h2>
+                <div>
+                  <div className="about_list">
+                    <div className="about_icon">
+                      <LuCheckCircle />
+                    </div>
+                    <p>
+                      Support with medication management/administration, enteral
+                      feeding, pain management, tracheotomy, stoma and catheter
+                      care.
+                    </p>
+                  </div>
+                  <div className="about_list">
+                    <div className="about_icon">
+                      <LuCheckCircle />
+                    </div>
+                    <p>
+                      Personalized care plans tailored to your unique needs,
+                      medical history and personal wishes.
+                    </p>
+                  </div>
+                  <div className="about_list">
+                    <div className="about_icon">
+                      <LuCheckCircle />
+                    </div>
+                    <p>
+                      Specialist nurses in various fields including: cancer
+                      care, cardiovascular conditions, later living, diabetes
+                      management, lung conditions, palliative & end of life
+                      care, post operative recovery, neurological
+                      rehabilitation.
+                    </p>
+                  </div>
+                  <div className="about_list">
+                    <div className="about_icon">
+                      <LuCheckCircle />
+                    </div>
+                    <p>
+                      Accompaniment to and from medical appointments, advice and
+                      liaison with medical professionals and post surgery
+                      support.
+                    </p>
+                  </div>
+                  <div className="about_list">
+                    <div className="about_icon">
+                      <LuCheckCircle />
+                    </div>
+                    <p>
+                      Expert guidance, emotional support and continual
+                      reassurance.
+                    </p>
+                  </div>
+                </div>
               </Col>
             </Row>
           </Col>
-          <Col></Col>
-          <Col lg={3} className="assistence_img">
+          <Col lg={4} className="about_img">
             <img src={Assistance} className=" rounded" />
           </Col>
         </Row>
@@ -52,4 +80,4 @@ const Assistence = () => {
   );
 };
 
-export default Assistence;
+export default AboutUs;

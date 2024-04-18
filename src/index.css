@@ -4,7 +4,7 @@
   --color-blue: #003f4e;
   --color-light-green: #009b45;
   --color-dark-green: #014815;
-  --color-primary-text: #000d10;
+  --color-primary-text: #012a4a;
   --color-secondary-text: #213c42;
   --color-white: #fff;
   --color-bg-1: #f7fafb;
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-primary-text);
+  color: #012a4a;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -55,7 +55,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 p {
   color: var(--color-secondary-text);
@@ -141,7 +141,16 @@ a {
 .banner_caption {
   position: absolute;
   text-align: center;
-  top: 40%;
+  top: 30%;
+  margin-inline: auto;
+}
+.banner_btn {
+  background-color: #009b45;
+  padding: 12px 24px;
+
+  border-radius: var(--radius-1);
+  color: white;
+  margin-top: 1.4rem;
 }
 .banner_caption p {
   color: white;
@@ -520,4 +529,35 @@ ul.breadcrumb li a:hover {
 .tabStyle .nav-link {
   border-bottom: 2px solid #009b45;
   color: #009b45 !important;
+}
+
+/*------------------ AboutUs Page -------------------------*/
+
+.about_img {
+  overflow: hidden;
+  height: 360px;
+  border-radius: var(--radius-2);
+}
+.about_img img {
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .about_img {
+    height: 300px;
+  }
+}
+.about_heading {
+  color: var(--color-primary-text);
+}
+.about_sub {
+  padding: 1rem;
+  background-color: var(--color-bg-2);
+}
+.about_list {
+  display: flex;
+}
+.about_icon {
+  width: 32px;
+  height: 32px;
+  color: #ffd500;
 }

@@ -21,8 +21,9 @@ function UncontrolledExample() {
 
         <Carousel.Caption className="banner_caption">
           <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
-            Compassion Is At The Heart Of Our Care
+            Private at Home Nursing Care Services in UAE
           </h1>
+          <button className="banner_btn fw-semibold">Book Appointment</button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="banner">
@@ -33,8 +34,9 @@ function UncontrolledExample() {
         )}
         <Carousel.Caption className="banner_caption">
           <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
-            24 Hours In-Home Care
+            Private at Home Nursing Care Services in UAE
           </h1>
+          <button className="banner_btn fw-semibold">Book Appointment</button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="banner">
@@ -45,8 +47,9 @@ function UncontrolledExample() {
         )}
         <Carousel.Caption className="banner_caption">
           <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
-            Post-Hospitalization Home Health Care
+            Private at Home Nursing Care Services in UAE
           </h1>
+          <button className="banner_btn fw-semibold">Book Appointment</button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
