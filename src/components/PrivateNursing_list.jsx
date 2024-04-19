@@ -6,22 +6,11 @@ import NursingServices from "../assets/Nursing-services.png";
 import { Link } from "react-router-dom";
 import FeatureIcon from "../assets/features.svg";
 
-// "24 HOURS IN-HOME NURSING SERVICES",
-// "POST OPERATIVE CARE",
-// "VENTILATOR CARE AT HOME",
-// "PALLIATIVE CARE",
-// "ELDERLY CARE SERVICES/CARETAKERS",
-// "PEDIATRIC PALLIATIVE CARE SERVICES AT HOME",
-// "PARALYTIC CARE SERVICES AT HOME",
-// "PARKINSON CARE",
-// "PHYSIOTHERAPY SERVICES",
-// "DOCTOR HOME VISITS",
-// "MEDICAL TOURISM",
-// "INJECTION SERVICES AT HOME",
-// "BLOOD TEST AT HOME",
-// "HYDRAFACIAL SERVICES AT HOME",
-
 const services = [
+  {
+    name: "Nursing services",
+    link: "/service",
+  },
   {
     name: "Post Operative Care",
     link: "/service",

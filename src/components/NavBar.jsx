@@ -8,44 +8,60 @@ import { useMediaQuery } from "react-responsive";
 
 const services = [
   {
-    name: "Home Nursing",
-    link: "/service",
-  },
-  {
-    name: "24 Hours In-Home Care",
-    link: "/service",
-  },
-  {
-    name: "Ventilator Care",
-    link: "/service",
-  },
-  {
-    name: "Post Hospitalization",
-    link: "/service",
-  },
-  {
-    name: "Nurses Visit",
-    link: "/service",
-  },
-  {
-    name: "Palliative care",
-    link: "/service",
-  },
-  {
-    name: "Elderly Care Services",
-    link: "/service",
+    name: "24 Hours In-Home Nursing services",
+    link: "/private-nursing",
   },
   {
     name: "Post Operative Care",
-    link: "/service",
+    link: "/post-operative-care",
   },
   {
-    name: "Pediatric Palliative care",
-    link: "/service",
+    name: "Ventilator Care",
+    link: "/ventilator-care",
+  },
+  {
+    name: "Palliative Care",
+    link: "/palliative-care",
+  },
+  {
+    name: "Elderly Care",
+    link: "/elderly-care",
+  },
+  {
+    name: "Pediatric Palliative",
+    link: "/pediatric-palliative",
   },
   {
     name: "Paralytic Care",
-    link: "/service",
+    link: "/paralytic-care",
+  },
+  {
+    name: "Parkinson Care",
+    link: "/parkinson-care",
+  },
+  {
+    name: "Physiotherapy Services",
+    link: "/physiotherapy-services",
+  },
+  {
+    name: "Doctor Home Visits",
+    link: "/doctor-home-visits",
+  },
+  {
+    name: "Medical Tourism",
+    link: "/medical-tourism",
+  },
+  {
+    name: "Injection Services",
+    link: "/injection-services",
+  },
+  {
+    name: "Blood Test",
+    link: "/blood-test",
+  },
+  {
+    name: "Hydrafacial Services",
+    link: "/hydrafacial-services",
   },
 ];
 
