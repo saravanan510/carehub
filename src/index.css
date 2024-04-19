@@ -168,7 +168,7 @@ a {
 @media (max-width: 475px) {
   .banner_caption {
     position: absolute;
-    top: 40%;
+    top: 20%;
   }
   .banner img {
     height: 70vh;
