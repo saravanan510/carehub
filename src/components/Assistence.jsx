@@ -13,7 +13,7 @@ const AboutUs = () => {
           <Col lg={8}>
             <Row className="mb-4">
               <Col>
-                <h2 className="about_heading fs-3 mb-3 fw-semibold">
+                <h2 className="about_heading fs-3 mb-3 fw-bold">
                   Key Benefits of Choosing Carehub Healthcare
                 </h2>
                 <div>

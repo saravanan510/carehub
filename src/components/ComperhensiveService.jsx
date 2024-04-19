@@ -8,19 +8,19 @@ import { TbNurse } from "react-icons/tb";
 const cardItems = [
   {
     title: "Private Nursing",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    para: "At Carehub Nursing Services, we understand the importance of maintaining a sense of independence and autonomy for our clients. ",
   },
   {
     title: "24 Hours In-Home",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    para: "Carehub healthcare  is a leading provider of in-home care services for individuals in need of assistance with daily living activities. ",
   },
   {
     title: "Post-Hospitalization",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    para: "Anybody's life can be completely upended by a serious sickness, accident, or other health incident",
   },
   {
     title: "Palliative Care",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    para: "Palliative care is an essential service that provides comfort and support to individuals who are living with a serious illness. ",
   },
 ];
 
@@ -30,7 +30,7 @@ const ComperhensiveService = () => {
       <Container>
         <Row>
           <Col className="header ">
-            <h2 className="fs-3 fw-semibold">Our Comprehensive Services</h2>
+            <h2 className="fs-3 fw-bold">Our Comprehensive Services</h2>
             <p>
               At Carehub Healthcare, we offer a wide range of comprehensive
               services designed to cater to the unique needs of our clients.

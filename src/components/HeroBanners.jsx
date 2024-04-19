@@ -22,8 +22,12 @@ function UncontrolledExample() {
 
         <Carousel.Caption className="banner_caption">
           <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
-            Private at Home Nursing Care Services in UAE
+            Private at Home Nursing Care <br /> Services in UAE
           </h1>
+          <p>
+            At Care hub Healthcare, we know that people are happiest and most
+            comfortable <br /> when in their own home.
+          </p>
           <Link to={"/contact"}>
             <button className="banner_btn fw-semibold">Book Appointment</button>{" "}
           </Link>
@@ -37,8 +41,12 @@ function UncontrolledExample() {
         )}
         <Carousel.Caption className="banner_caption">
           <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
-            Private at Home Nursing Care Services in UAE
+            Individualized care from a dedicated <br /> nurse or team of nurses
           </h1>
+          <p>
+            At Care hub Healthcare, we know that people are happiest and most
+            comfortable <br /> when in their own home.
+          </p>
           <Link to={"/contact"}>
             <button className="banner_btn fw-semibold">Book Appointment</button>{" "}
           </Link>
@@ -52,8 +60,12 @@ function UncontrolledExample() {
         )}
         <Carousel.Caption className="banner_caption">
           <h1 className={isMobile ? "fs-3 fw-bold" : "fw-bold"}>
-            Private at Home Nursing Care Services in UAE
+            Personalized care plans tailored to <br /> your unique needs
           </h1>
+          <p>
+            At Care hub Healthcare, we know that people are happiest and most
+            comfortable <br /> when in their own home.
+          </p>
 
           <Link to={"/contact"}>
             <button className="banner_btn fw-semibold">Book Appointment</button>{" "}

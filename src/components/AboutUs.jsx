@@ -17,7 +17,7 @@ const AboutUs = () => {
           <Col lg={8}>
             <Row className="mb-4">
               <Col>
-                <h2 className="about_heading fs-3 fw-semibold">
+                <h2 className="about_heading fs-3 fw-bold">
                   Why choose a Carehub Healthcare Private Nurse?
                 </h2>
                 <p>
@@ -49,10 +49,9 @@ const AboutUs = () => {
                       <img src={list_icon} />
                     </div>
                     <p>
-                      Individualised care from a dedicated nurse or team of
-                      nurses, catering to your care requirements, whether for a
-                      short visit, live in care, overnight cover or 24 hour
-                      support.
+                      Nursing visits (subject to location) for assessments,
+                      dressing changes, IVF injections , IV infusions and wound
+                      care.
                     </p>
                   </div>
                 </div>

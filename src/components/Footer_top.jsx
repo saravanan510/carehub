@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Logo from "../assets/carehub-logo.jpg";
 import { LiaUserNurseSolid } from "react-icons/lia";
+import Care from "../assets/Care.svg";
 
 const Footer_top = () => {
   return (
@@ -12,14 +13,14 @@ const Footer_top = () => {
           <Col className="ft_item" md={6} sm={12}>
             <img src={Logo} width="80px" />
             <div>
-              <h5>Carehub Healthcare</h5>
+              <h5 className="fs-5 fw-bold">Carehub Healthcare</h5>
               <p>At Carehub Healthcare</p>
             </div>
           </Col>
           <Col className="ft_item" md={6} sm={12}>
-            <img src={Logo} width="80px" />
+            <img src={Care} width="48px" />
             <div>
-              <h5>+ (123) 1800 - 567 - 8990</h5>
+              <h5 className="fs-5 fw-bold">+ (123) 1800 - 567 - 8990</h5>
               <p>At Carehub Healthcare</p>
             </div>
           </Col>

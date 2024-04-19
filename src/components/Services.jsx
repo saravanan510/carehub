@@ -23,53 +23,73 @@ import { Link } from "react-router-dom";
 const services = [
   {
     image: service_1,
-    title: "Home Nursing",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "HOME NURSING",
+    para: "Carehub healthcare  is a leading provider of in-home care services...",
   },
   {
     image: service_2,
-    title: "24 Hours In-Home Care",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "POST OPERATIVE CARE",
+    para: "Anybody's life can be completely upended by a serious sickness...",
   },
   {
     image: service_3,
-    title: "Post Hospitalization",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "VENTILATOR CARE ",
+    para: "Ventilators at home were an anomaly until a few years ago. It was thought...",
   },
   {
     image: service_4,
-    title: "Nurse Visits",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "PALLIATIVE CARE",
+    para: "Palliative care is an essential service that provides comfort and support to...",
   },
   {
     image: service_5,
-    title: "Ventilator Care at Home",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "ELDERLY CARE",
+    para: "We realize that you want to be at home. However, your care demands may have...",
   },
   {
     image: service_6,
-    title: "Palliative care",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "PEDIATRIC PALLIATIVE",
+    para: "Pediatric Palliative care  is specialized medical care for people living with... ",
   },
   {
     image: service_7,
-    title: "Elderly Care Services",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "PARALYTIC CARE ",
+    para: "Looking for quality Paralytic Care Services but want to receive them in the comfort...",
   },
   {
     image: service_8,
-    title: "Post Operative Care",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "PARKINSON CARE",
+    para: "Parkinson's disease is diagnosed, and this results in a mixture of shock, anxiety...",
   },
   {
     image: service_9,
-    title: "Pediatric Palliative care",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "PHYSIOTHERAPY",
+    para: "Physical therapy has made remarkable strides over the years, from its earliest...",
   },
   {
     image: service_10,
-    title: "Paralytic Care",
-    para: "At Carehub Healthcare, we offer a wide range of comprehensive services.",
+    title: "DOCTOR HOME VISITS",
+    para: "Having access to a doctor at the comfort of your home was a privilege few could...",
+  },
+  {
+    image: service_1,
+    title: "MEDICAL TOURISM",
+    para: "Carehub healthcare is a leading medical tourism company in UAE operating...",
+  },
+  {
+    image: service_2,
+    title: "INJECTION SERVICES ",
+    para: "Injection services at home- Get the facility of getting injections sitting...",
+  },
+  {
+    image: service_3,
+    title: "BLOOD TEST AT HOME",
+    para: "If you are looking for an emergency Lab test at home, Carehub is with you...",
+  },
+  {
+    image: service_4,
+    title: "HYDRAFACIAL SERVICES ",
+    para: "Hydrafacial is an innovative and non-invasive skincare treatment that combines...",
   },
 ];
 
@@ -79,7 +99,7 @@ const Services = () => {
       <Container>
         <Row>
           <Col className="header ">
-            <h2 className="fs-3 fw-semibold">What Services we offer</h2>
+            <h2 className="fs-3 fw-bold">What Services we offer</h2>
             <p>
               At Carehub Healthcare, we offer a wide range of comprehensive
               services designed to cater to the unique needs of our clients.
@@ -115,10 +135,7 @@ const Services = () => {
                     <div className="service2_card-body">
                       <TbNurse className="service2_icon" />
                       <h5>{service.title}</h5>
-                      <p>
-                        At Carehub Healthcare, we offer a wide range of
-                        comprehensive services.
-                      </p>
+                      <p>{service.para}</p>
                       <button className="service2_btn">
                         <Link to={"/service"}>Learn More</Link>
                         <FaLongArrowAltRight className="ms-2" />

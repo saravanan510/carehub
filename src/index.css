@@ -187,7 +187,7 @@ a {
   font-size: 1.1rem;
   color: var(--color-primary-text);
   margin-bottom: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .comp_service-para {
   font-size: 0.9rem;
@@ -267,10 +267,12 @@ a {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   line-height: 1.2;
+  color: #012a4ae8;
 }
 .service2_card-body h5 {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--color-primary-text);
 }
 .service2_card-body {
   position: absolute;
@@ -305,8 +307,12 @@ a {
 .service2_card-body:hover a {
   color: #ffd500;
 }
+.service2_card-body:hover h5 {
+  color: white;
+}
 .service2_btn {
   background-color: transparent;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--color-light-green);
 }
@@ -373,9 +379,37 @@ a {
   margin-bottom: 1.6rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
+  margin-inline: auto;
 }
 .review {
   text-align: center;
+}
+.testimonial_review {
+  text-align: center;
+}
+.testimonial_review p {
+  width: 80ch;
+  margin-inline: auto;
+}
+
+@media (max-width: 475px) {
+  .testimonial_review p {
+    width: 70%;
+    margin-inline: auto;
+  }
+  .slick-next {
+    right: 0px;
+  }
+  .slick-prev {
+    left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial_review p {
+    width: 80%;
+    margin-inline: auto;
+  }
 }
 
 /*------------------ Broucher -------------------------*/
@@ -405,6 +439,7 @@ a {
 .ft_item {
   display: flex;
   align-items: center;
+  gap: 0.6rem;
 }
 .footer {
   padding: 4rem 0 1rem;
