@@ -2,16 +2,28 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import PrivateNursing_img from "../assets/PrivateNursing-img.jpg";
+import NursingServices from "../assets/Nursing-services.png";
 import { Link } from "react-router-dom";
+import FeatureIcon from "../assets/features.svg";
+
+// "24 HOURS IN-HOME NURSING SERVICES",
+// "POST OPERATIVE CARE",
+// "VENTILATOR CARE AT HOME",
+// "PALLIATIVE CARE",
+// "ELDERLY CARE SERVICES/CARETAKERS",
+// "PEDIATRIC PALLIATIVE CARE SERVICES AT HOME",
+// "PARALYTIC CARE SERVICES AT HOME",
+// "PARKINSON CARE",
+// "PHYSIOTHERAPY SERVICES",
+// "DOCTOR HOME VISITS",
+// "MEDICAL TOURISM",
+// "INJECTION SERVICES AT HOME",
+// "BLOOD TEST AT HOME",
+// "HYDRAFACIAL SERVICES AT HOME",
 
 const services = [
   {
-    name: "Private Nursing",
-    link: "/service",
-  },
-  {
-    name: "24 Hours In-Home Care",
+    name: "Post Operative Care",
     link: "/service",
   },
   {
@@ -19,31 +31,47 @@ const services = [
     link: "/service",
   },
   {
-    name: "Post Hospitalization",
+    name: "Palliative Care",
     link: "/service",
   },
   {
-    name: "Nurses Visit",
+    name: "Elderly Care",
     link: "/service",
   },
   {
-    name: "Palliative care",
-    link: "/service",
-  },
-  {
-    name: "Elderly Care Services",
-    link: "/service",
-  },
-  {
-    name: "Post Operative Care",
-    link: "/service",
-  },
-  {
-    name: "Pediatric Palliative care",
+    name: "Pediatric Palliative",
     link: "/service",
   },
   {
     name: "Paralytic Care",
+    link: "/service",
+  },
+  {
+    name: "Parkinson Care",
+    link: "/service",
+  },
+  {
+    name: "Physiotherapy Services",
+    link: "/service",
+  },
+  {
+    name: "Doctor Home Visits",
+    link: "/service",
+  },
+  {
+    name: "Medical Tourism",
+    link: "/service",
+  },
+  {
+    name: "Injection Services",
+    link: "/service",
+  },
+  {
+    name: "Blood Test",
+    link: "/service",
+  },
+  {
+    name: "Hydrafacial Services",
     link: "/service",
   },
 ];
@@ -53,15 +81,18 @@ const PrivateNursing_list = () => {
       <section>
         <Container>
           <Row className="g-5">
-            <Col lg={9}>
-              <img src={PrivateNursing_img} width="100%" />
+            <Col lg={9} className="service_img me-6">
+              <img src={NursingServices} />
             </Col>
             <Col className="otherservices rounded-4">
-              <h3 className="fs-5 fw-bold">Other Services</h3>
+              <h3 className="fs-5 fw-bold mb-3" style={{ color: "#012a4a" }}>
+                Other Services
+              </h3>
               <ul className="ServicePage_list-list">
                 {services.map((ele, i) => {
                   return (
                     <li key={i}>
+                      <img src={FeatureIcon} className="me-2" />
                       <Link to={ele.link}>{ele.name}</Link>
                     </li>
                   );

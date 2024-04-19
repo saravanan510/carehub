@@ -7,16 +7,20 @@ import FeatureIcon from "../assets/features.svg";
 // service_rfhez58
 // service_rfhez58
 const services = [
-  "Home Nursing",
-  "24 Hours In-Home Care",
-  "Ventilator Care",
-  "Post Hospitalization",
-  "Nurses Visit",
-  "Palliative care",
-  "Elderly Care Services",
-  "Post Operative Care",
-  "Pediatric Palliative care",
-  "Paralytic Care",
+  "24 HOURS IN-HOME NURSING SERVICES",
+  "POST OPERATIVE CARE",
+  "VENTILATOR CARE AT HOME",
+  "PALLIATIVE CARE",
+  "ELDERLY CARE SERVICES/CARETAKERS",
+  "PEDIATRIC PALLIATIVE CARE SERVICES AT HOME",
+  "PARALYTIC CARE SERVICES AT HOME",
+  "PARKINSON CARE",
+  "PHYSIOTHERAPY SERVICES",
+  "DOCTOR HOME VISITS",
+  "MEDICAL TOURISM",
+  "INJECTION SERVICES AT HOME",
+  "BLOOD TEST AT HOME",
+  "HYDRAFACIAL SERVICES AT HOME",
 ];
 
 const PrivateNursing_details = () => {
@@ -55,113 +59,103 @@ const PrivateNursing_details = () => {
         <Container>
           <Row className="g-5">
             <Col className="text-start pe-5" lg={9}>
-              <h2 className="fs-3 fw-semibold" style={{ color: "#012a4a" }}>
-                Private Nursing
+              <h2 className="fs-3 fw-bold" style={{ color: "#012a4a" }}>
+                24 Hours In-Home Nursing services
               </h2>
               <p>
-                At Carehub Healthcare, we offer a wide range of comprehensive
-                services designed to cater to the unique needs of our clients.
-                At Carehub Healthcare, we offer a wide range of comprehensive
-                services designed to cater to the unique needs of our clients.
+                Carehub healthcare is a leading provider of in-home care
+                services for individuals in need of assistance with daily living
+                activities. Our 24-hour care services are designed to help
+                individuals maintain their independence and quality of life in
+                the comfort of their own homes.
+              </p>
+              <p>
+                One of the many benefits of our 24-hour in-home care services is
+                that they allow individuals to receive the care they need
+                without having to leave their home and familiar surroundings.
+                Our team of highly trained and compassionate caregivers is
+                available around the clock to provide assistance with a wide
+                range of activities, including:
               </p>
 
-              <h4 className="fs-5 fw-semibold" style={{ color: "#012a4a" }}>
-                Private Nursing
+              <h4 className="fs-5 fw-bold" style={{ color: "#012a4a" }}>
+                Services
               </h4>
               <Row>
-                <Col sm={12} lg={4}>
+                <Col>
                   <ul className="service_page_features_list">
                     <li>
-                      <img src={FeatureIcon} />
+                      <img src={FeatureIcon} className="me-2" />
                       <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
+                        Personal care, such as bathing, grooming, and dressing
                       </p>
                     </li>
                     <li>
-                      <img src={FeatureIcon} />
+                      <img src={FeatureIcon} className="me-2" />
                       <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
+                        Medication management and administration
                       </p>
                     </li>
                     <li>
-                      <img src={FeatureIcon} />
+                      <img src={FeatureIcon} className="me-2" />
                       <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
+                        Meal preparation and feeding
                       </p>
                     </li>
                     <li>
-                      <img src={FeatureIcon} />
+                      <img src={FeatureIcon} className="me-2" />
                       <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
-                      </p>
-                    </li>
-                  </ul>
-                </Col>
-                <Col sm={12} lg={4}>
-                  <ul className="service_page_features_list">
-                    <li>
-                      <img src={FeatureIcon} />
-                      <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
+                        Mobility assistance and transportation
                       </p>
                     </li>
                     <li>
-                      <img src={FeatureIcon} />
+                      <img src={FeatureIcon} className="me-2" />
                       <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
+                        Light housekeeping and laundry
                       </p>
                     </li>
                     <li>
-                      <img src={FeatureIcon} />
+                      <img src={FeatureIcon} className="me-2" />
                       <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
-                      </p>
-                    </li>
-                    <li>
-                      <img src={FeatureIcon} />
-                      <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
-                      </p>
-                    </li>
-                  </ul>
-                </Col>
-                <Col sm={12} lg={4}>
-                  <ul className="service_page_features_list">
-                    <li>
-                      <img src={FeatureIcon} />
-                      <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
-                      </p>
-                    </li>
-                    <li>
-                      <img src={FeatureIcon} />
-                      <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
-                      </p>
-                    </li>
-                    <li>
-                      <img src={FeatureIcon} />
-                      <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
-                      </p>
-                    </li>
-                    <li>
-                      <img src={FeatureIcon} />
-                      <p className="service_feature m-0 fw-semibold">
-                        Carehub Healthcare
+                        Companionship and social engagement
                       </p>
                     </li>
                   </ul>
                 </Col>
               </Row>
               <p>
-                At Carehub Healthcare, we offer a wide range of comprehensive
-                services designed to cater to the unique needs of our clients.
-                At Carehub Healthcare, we offer a wide range of comprehensive
-                services designed to cater to the unique needs of our clients.
+                Our caregivers are also equipped to provide specialized care for
+                individuals with chronic conditions, such as Alzheimer's and
+                dementia, as well as those recovering from surgery or illness.
+              </p>
+              <p>
+                At Carehub Nursing Services, we understand the importance of
+                maintaining a sense of independence and autonomy for our
+                clients. That's why we work closely with each individual and
+                their loved ones to create a personalized care plan that meets
+                their unique needs and preferences. We also strive to provide
+                continuity of care by assigning a primary caregiver to each
+                client, ensuring that they have a familiar face and trusted
+                companion to provide care and support.
+              </p>
+              <p>
+                In addition to our 24-hour in-home care services, we also offer
+                respite care, live-in care, and specialized care for individuals
+                with chronic conditions. Our team is available to answer any
+                questions and provide more information about the services we
+                offer.
+              </p>
+              <p>
+                With Carehub Services, you can have peace of mind knowing that
+                your loved one is receiving the highest quality care and support
+                in the comfort of their own home. Contact us today to learn more
+                about how we can help you and your loved ones.
               </p>
             </Col>
             <Col className="booking text-start rounded-4">
+              <h4 className="fs-5 fw-bold mb-3" style={{ color: "#012a4a" }}>
+                Book Appointment
+              </h4>
               <form onSubmit={handleSubmit}>
                 <label>Full Name</label>
                 <br />

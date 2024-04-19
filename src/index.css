@@ -486,9 +486,20 @@ a {
 .servicepage_banner p {
   color: white;
 }
+.service_img {
+  overflow: hidden;
+}
+.service_img img {
+  width: 100%;
+  border-radius: var(--radius-1);
+}
 .otherservices {
   padding: 1.5rem 2rem;
   background-color: #f9f9f9;
+}
+.otherservices h3 {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-light-green);
 }
 .otherservices ul {
   padding: 0;
@@ -504,19 +515,24 @@ a {
 .booking {
   padding: 1.5rem 2rem;
   background-color: #f9f9f9;
+  height: fit-content;
 }
 label {
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 500;
   margin-bottom: 0.1rem;
 }
 input {
-  height: 2rem;
+  height: 36px;
   width: 100%;
   border: none;
   outline: none;
   border-radius: var(--radius-1);
   padding: 0.2rem;
+}
+.servicedrop {
+  height: 36px;
+  width: 100%;
 }
 .servicedrop {
   height: 2rem;
@@ -546,7 +562,7 @@ ul.breadcrumb {
 }
 ul.breadcrumb li {
   display: inline;
-  font-size: 18px;
+  font-size: 16px;
   color: #f5faf7;
 }
 ul.breadcrumb li + li:before {
@@ -590,6 +606,9 @@ ul.breadcrumb li a:hover {
 .service_feature {
   font-weight: 600;
   color: var(--color-primary-text);
+}
+.otherservices {
+  height: fit-content;
 }
 /*------------------ AboutUs Page -------------------------*/
 
