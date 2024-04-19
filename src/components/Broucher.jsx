@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import FAQ from "../assets/faq.png";
+import BroucherPDF from "../assets/Broucher.pdf";
 const Broucher = () => {
   return (
     <section>
@@ -13,7 +14,7 @@ const Broucher = () => {
               At Carehub Healthcare, we offer a wide range of comprehensive
               services designed to cater to the unique needs of our clients.
             </p>
-            <a href="../assets/Broucher.pdf" download="Broucher.pdf">
+            <a href={BroucherPDF} download="Broucher.pdf">
               <button type="button" class="custom-button border border-0">
                 Download
               </button>
