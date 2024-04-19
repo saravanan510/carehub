@@ -33,7 +33,9 @@ function Testimonial() {
             <Slider {...settings}>
               <div className="testimonial_review">
                 <img src={Client_img} alt="" className="testimonial_profile" />
-                <h4 style={{ color: "white" }}>Great Staff!</h4>
+                <h3 style={{ color: "white", fontWeight: 600 }}>
+                  Great Staff!
+                </h3>
                 <p style={{ color: "white" }}>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -44,7 +46,7 @@ function Testimonial() {
               </div>
               <div className="testimonial_review">
                 <img src={Client_img} alt="" className="testimonial_profile" />
-                <h4 style={{ color: "white" }}>Friendly</h4>
+                <h3 style={{ color: "white", fontWeight: 600 }}>Friendly</h3>
                 <p style={{ color: "white" }}>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -55,7 +57,7 @@ function Testimonial() {
               </div>
               <div className="testimonial_review">
                 <img src={Client_img} alt="" className="testimonial_profile" />
-                <h4 style={{ color: "white" }}>Loveable</h4>
+                <h3 style={{ color: "white", fontWeight: 600 }}>Loveable</h3>
                 <p style={{ color: "white" }}>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
