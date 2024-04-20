@@ -69,7 +69,7 @@ const PrivateNursing_list = () => {
     <>
       <section>
         <Container>
-          <Row className="g-5">
+          <Row className="g-4">
             <Col lg={9} className="service_img me-6">
               <img src={NursingServices} />
             </Col>
