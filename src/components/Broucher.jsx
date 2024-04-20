@@ -5,11 +5,11 @@ import FAQ from "../assets/faq.png";
 import BroucherPDF from "../assets/Broucher.pdf";
 const Broucher = () => {
   return (
-    <section>
+    <section className="broucher">
       <Container>
         <Row>
           <Col className="broucher_header">
-            <h2 className="fs-3 fw-semibold">Broucher</h2>
+            <h2 className="fs-3 fw-bold">Broucher</h2>
             <p>
               At Carehub Healthcare, we offer a wide range of comprehensive
               services designed to cater to the unique needs of our clients.
@@ -20,8 +20,8 @@ const Broucher = () => {
               </button>
             </a>
           </Col>
-          <Col md={12} lg={6}>
-            <img src={FAQ} width="100%" alt="" srcset="" />
+          <Col md={12} lg={6} className="broucher_img">
+            <img src={FAQ} width="100%" />
           </Col>
         </Row>
       </Container>

@@ -49,11 +49,11 @@ const BookAppointment = () => {
   };
   return (
     <div className="booking text-start rounded-4">
-      <h4 className="fs-5 fw-bold mb-3" style={{ color: "#012a4a" }}>
+      <h3 className="fs-5 fw-bold mb-3" style={{ color: "#012a4a" }}>
         Book Appointment
-      </h4>
+      </h3>
       <form onSubmit={handleSubmit}>
-        <label>Full Name</label>
+        <label className="fw-semibold">Full Name</label>
         <br />
         <input
           type="text"
@@ -61,11 +61,11 @@ const BookAppointment = () => {
           placeholder="Enter your name"
           value={form.fullName}
           onChange={handleChange}
-          className="border mb-2"
+          className="border-0 mb-2 p-2"
           required
         />
         <br />
-        <label>Email</label>
+        <label className="fw-semibold">Email</label>
         <br />
         <input
           type="email"
@@ -73,11 +73,11 @@ const BookAppointment = () => {
           placeholder="Enter your email"
           value={form.email}
           onChange={handleChange}
-          className="border mb-2"
+          className="border-0 mb-2 p-2"
           required
         />
         <br />
-        <label>Phone Number</label>
+        <label className="fw-semibold">Phone Number</label>
         <br />
         <input
           type="text"
@@ -85,28 +85,28 @@ const BookAppointment = () => {
           placeholder="Enter your phoneNumber"
           value={form.phoneNumber}
           onChange={handleChange}
-          className="border mb-2"
+          className="border-0 mb-2 p-2"
           required
         />
         <br />
-        <label>Appointment Date</label>
+        <label className="fw-semibold">Appointment Date</label>
         <br />
         <input
           type="date"
           name="date"
           value={form.date}
           onChange={handleChange}
-          className="border mb-2"
+          className="border-0 mb-2 p-2"
           required
         />
         <br />
-        <label>Choose Service</label>
+        <label className="fw-semibold">Choose Service</label>
         <br />
         <select
           value={form.service}
           name="service"
           onChange={handleChange}
-          className="servicedrop border mb-3"
+          className="servicedrop border mb-2 p-2"
           required
         >
           <option>Select category</option>
@@ -115,7 +115,7 @@ const BookAppointment = () => {
           })}
         </select>
         <br />
-        <input type="submit" className="formbtn" />
+        <input type="submit" className="formbtn fw-semibold" />
       </form>
     </div>
   );

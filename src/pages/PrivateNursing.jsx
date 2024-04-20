@@ -1,5 +1,4 @@
 import React from "react";
-import PrivateNursing_list from "../components/PrivateNursing_list";
 import PrivateNursing_details from "../components/PrivateNursing_details";
 import ScrollToTop from "../components/ScrollTop";
 import Container from "react-bootstrap/Container";

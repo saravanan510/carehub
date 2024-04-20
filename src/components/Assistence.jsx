@@ -9,11 +9,11 @@ const AboutUs = () => {
   return (
     <section className="assistance">
       <Container>
-        <Row className="g-4">
+        <Row className="assistance_row">
           <Col lg={8}>
             <Row className="mb-4">
               <Col>
-                <h2 className="about_heading fs-3 mb-3 fw-bold">
+                <h2 className="about_heading fs-3 fw-bold">
                   Key Benefits of Choosing Carehub Healthcare
                 </h2>
                 <div>
@@ -71,7 +71,7 @@ const AboutUs = () => {
               </Col>
             </Row>
           </Col>
-          <Col lg={4} className="about_img">
+          <Col className="about_img">
             <img src={Assistance} className=" rounded" />
           </Col>
         </Row>

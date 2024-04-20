@@ -55,7 +55,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 section {
-  padding: 2rem 0;
+  padding: 36px 0;
 }
 p {
   color: var(--color-secondary-text);
@@ -178,7 +178,9 @@ a {
 }
 
 /*------------------ Comperhensive Services -------------------------*/
-
+.comp {
+  padding-top: 70px;
+}
 .comperhensive_card {
   text-align: center;
   padding: 2rem 1rem;
@@ -354,16 +356,22 @@ a {
   height: 100%;
   object-fit: cover;
 }
+.assistance_row {
+  column-gap: 48px;
+}
 @media (max-width: 768px) {
   .assistence_img img {
     width: 100%;
+  }
+  .assistence_img {
+    margin-bottom: 32px;
   }
 }
 
 /*------------------ Testimonial -------------------------*/
 
 .testimonial {
-  padding: 6rem 0;
+  padding: 120px 0;
   background-image: linear-gradient(
       hsla(192, 100%, 15%, 0.801),
       hsla(192, 100%, 15%, 0.767)
@@ -415,12 +423,18 @@ a {
 }
 
 /*------------------ Broucher -------------------------*/
-
+.broucher {
+  padding: 70px 0;
+}
 .broucher_header {
   padding: 6rem;
 }
 .broucher_header h2 {
   color: var(--color-primary-text);
+}
+.broucher_img img {
+  border-radius: var(--radius-2);
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -473,7 +487,9 @@ a {
 }
 
 /*------------------ Services Page -------------------------*/
-
+.service {
+  padding: 70px 0;
+}
 .ServicePage_list-list {
   list-style-type: none;
 }
@@ -497,14 +513,18 @@ a {
   border-radius: var(--radius-1);
 }
 .otherservices {
-  padding: 1.5rem 2rem;
-  background-color: var(--color-bg-1);
+  padding: 1.4rem;
+  background-color: #dfe9eb;
   height: fit-content;
 }
 .booking {
-  padding: 1.5rem 2rem;
-  background-color: var(--color-bg-1);
+  padding: 1.4rem;
+  background-color: #dfe9eb;
   height: fit-content;
+}
+.booking h3 {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-light-green);
 }
 .otherservices h3 {
   padding-bottom: 1rem;
@@ -516,6 +536,9 @@ a {
 .otherservices li {
   padding: 0.2rem;
 }
+.otherservices li a:hover {
+  color: var(--color-light-green);
+}
 .otherservices li a {
   text-decoration: none;
   color: var(--color-blue);
@@ -523,12 +546,11 @@ a {
 }
 
 label {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 0.1rem;
+  font-size: 15px;
+  margin-bottom: 0.3rem;
 }
 input {
-  height: 36px;
+  height: 40px;
   width: 100%;
   border: none;
   outline: none;
@@ -536,7 +558,7 @@ input {
   padding: 0.2rem;
 }
 .servicedrop {
-  height: 36px;
+  height: 40px !important;
   width: 100%;
 }
 .servicedrop {
@@ -548,10 +570,11 @@ input {
   padding: 0.2rem;
 }
 .formbtn {
-  height: 2rem;
+  height: 40px;
   width: 100%;
   background-color: #009b45;
   color: white;
+  margin-top: 1rem;
 }
 @media (max-width: 425px) {
   .otherservices {
@@ -620,7 +643,7 @@ ul.breadcrumb li a:hover {
 
 .about_img {
   overflow: hidden;
-  height: 360px;
+  height: 400px;
   border-radius: var(--radius-2);
 }
 .about_img img {
@@ -629,10 +652,12 @@ ul.breadcrumb li a:hover {
 @media (max-width: 425px) {
   .about_img {
     height: 300px;
+    margin-bottom: 32px;
   }
 }
 .about_heading {
   color: var(--color-primary-text);
+  margin-bottom: 24px;
 }
 .about_sub {
   padding: 1rem;

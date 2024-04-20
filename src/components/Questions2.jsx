@@ -9,7 +9,7 @@ function Question2() {
       <Container>
         <Row>
           <Col className="header ">
-            <h2 className="fs-3 fw-semibold">Frequently Asked Questions</h2>
+            <h2 className="fs-3 fw-bold">Frequently Asked Questions</h2>
             <p>
               At Carehub Healthcare, we offer a wide range of comprehensive
               services designed to cater to the unique needs of our clients.
@@ -21,7 +21,6 @@ function Question2() {
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  {" "}
                   How can I schedule an appointment?
                 </Accordion.Header>
                 <Accordion.Body>

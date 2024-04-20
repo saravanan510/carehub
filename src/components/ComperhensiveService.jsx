@@ -37,7 +37,7 @@ const ComperhensiveService = () => {
             </p>
           </Col>
         </Row>
-        <Row className="d-flex flex-wrap g-4">
+        <Row className="g-4">
           {cardItems.map((item) => {
             return (
               <Col xs={12} md={6} lg={3} className="d-flex flex-column">

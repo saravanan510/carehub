@@ -1,5 +1,4 @@
 import React from "react";
-import PrivateNursing_list from "../components/PrivateNursing_list";
 import PediatricPalliative_details from "../components/PediatricPalliative_details";
 import ScrollToTop from "../components/ScrollTop";
 import Container from "react-bootstrap/Container";
@@ -21,7 +20,6 @@ const PediatricPalliative = () => {
         </Container>
       </div>
       <PediatricPalliative_details />
-      <PrivateNursing_list />
     </>
   );
 };

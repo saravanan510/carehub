@@ -9,12 +9,12 @@ const AboutUs = () => {
   return (
     <section className="assistance">
       <Container>
-        <Row className="g-4">
+        <Row className="assistance_row">
           <Col lg={4} className="about_img">
             <img src={Assistance} className=" rounded" />
           </Col>
 
-          <Col lg={8}>
+          <Col>
             <Row className="mb-4">
               <Col>
                 <h2 className="about_heading fs-3 fw-bold">

@@ -1,5 +1,4 @@
 import React from "react";
-import PrivateNursing_list from "../components/PrivateNursing_list";
 import BloodTest_details from "../components/BloodTest_details";
 import ScrollToTop from "../components/ScrollTop";
 import Container from "react-bootstrap/Container";
@@ -21,7 +20,6 @@ const BloodTest = () => {
         </Container>
       </div>
       <BloodTest_details />
-      <PrivateNursing_list />
     </>
   );
 };
