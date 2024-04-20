@@ -146,6 +146,8 @@ a {
 /*------------------ Banner -------------------------*/
 .banner img {
   height: 80vh;
+  width: 100% !important;
+  object-fit: cover !important;
 }
 .banner_caption {
   position: absolute;

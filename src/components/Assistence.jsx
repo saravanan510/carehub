@@ -9,7 +9,7 @@ const AboutUs = () => {
   return (
     <section className="assistance">
       <Container>
-        <Row className="g-5">
+        <Row className="g-4">
           <Col lg={8}>
             <Row className="mb-4">
               <Col>
