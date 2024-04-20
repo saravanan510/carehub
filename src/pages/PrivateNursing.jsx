@@ -22,7 +22,6 @@ const PrivateNursing = () => {
         </Container>
       </div>
       <PrivateNursing_details />
-      <PrivateNursing_list />
     </>
   );
 };
