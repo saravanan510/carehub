@@ -9,59 +9,59 @@ import FeatureIcon from "../assets/features.svg";
 const services = [
   {
     name: "Nursing services",
-    link: "/service",
+    link: "/private-nursing",
   },
   {
     name: "Post Operative Care",
-    link: "/service",
+    link: "/post-operative-care",
   },
   {
     name: "Ventilator Care",
-    link: "/service",
+    link: "/ventilator-care",
   },
   {
     name: "Palliative Care",
-    link: "/service",
+    link: "/palliative-care",
   },
   {
     name: "Elderly Care",
-    link: "/service",
+    link: "/elderly-care",
   },
   {
     name: "Pediatric Palliative",
-    link: "/service",
+    link: "/pediatric-palliative",
   },
   {
     name: "Paralytic Care",
-    link: "/service",
+    link: "/paralytic-care",
   },
   {
     name: "Parkinson Care",
-    link: "/service",
+    link: "/parkinson-care",
   },
   {
     name: "Physiotherapy Services",
-    link: "/service",
+    link: "/physiotherapy-services",
   },
   {
     name: "Doctor Home Visits",
-    link: "/service",
+    link: "/doctor-home-visits",
   },
   {
     name: "Medical Tourism",
-    link: "/service",
+    link: "/medical-tourism",
   },
   {
     name: "Injection Services",
-    link: "/service",
+    link: "/injection-services",
   },
   {
     name: "Blood Test",
-    link: "/service",
+    link: "/blood-test",
   },
   {
     name: "Hydrafacial Services",
-    link: "/service",
+    link: "/hydrafacial-services",
   },
 ];
 const PrivateNursing_list = () => {

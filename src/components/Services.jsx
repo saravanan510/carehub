@@ -25,71 +25,85 @@ const services = [
     image: service_1,
     title: "HOME NURSING",
     para: "Carehub healthcare  is a leading provider of in-home care services...",
+    link: "/private-nursing",
   },
   {
     image: service_2,
     title: "POST OPERATIVE CARE",
     para: "Anybody's life can be completely upended by a serious sickness...",
+    link: "/post-operative-care",
   },
   {
     image: service_3,
     title: "VENTILATOR CARE ",
     para: "Ventilators at home were an anomaly until a few years ago. It was thought...",
+    link: "/ventilator-care",
   },
   {
     image: service_4,
     title: "PALLIATIVE CARE",
     para: "Palliative care is an essential service that provides comfort and support to...",
+    link: "/palliative-care",
   },
   {
     image: service_5,
     title: "ELDERLY CARE",
     para: "We realize that you want to be at home. However, your care demands may have...",
+    link: "/elderly-care",
   },
   {
     image: service_6,
     title: "PEDIATRIC PALLIATIVE",
     para: "Pediatric Palliative care  is specialized medical care for people living with... ",
+    link: "/pediatric-palliative",
   },
   {
     image: service_7,
     title: "PARALYTIC CARE ",
     para: "Looking for quality Paralytic Care Services but want to receive them in the comfort...",
+    link: "/paralytic-care",
   },
   {
     image: service_8,
     title: "PARKINSON CARE",
     para: "Parkinson's disease is diagnosed, and this results in a mixture of shock, anxiety...",
+    link: "/parkinson-care",
   },
   {
     image: service_9,
     title: "PHYSIOTHERAPY",
     para: "Physical therapy has made remarkable strides over the years, from its earliest...",
+    link: "/physiotherapy-services",
   },
   {
     image: service_10,
     title: "DOCTOR HOME VISITS",
     para: "Having access to a doctor at the comfort of your home was a privilege few could...",
+    link: "/doctor-home-visits",
   },
   {
     image: service_1,
     title: "MEDICAL TOURISM",
     para: "Carehub healthcare is a leading medical tourism company in UAE operating...",
+    link: "/medical-tourism",
   },
   {
     image: service_2,
     title: "INJECTION SERVICES ",
     para: "Injection services at home- Get the facility of getting injections sitting...",
+    link: "/injection-services",
   },
   {
     image: service_3,
     title: "BLOOD TEST AT HOME",
     para: "If you are looking for an emergency Lab test at home, Carehub is with you...",
+    link: "/blood-test",
   },
   {
     image: service_4,
     title: "HYDRAFACIAL SERVICES ",
     para: "Hydrafacial is an innovative and non-invasive skincare treatment that combines...",
+    link: "/hydrafacial-services",
   },
 ];
 
@@ -137,7 +151,7 @@ const Services = () => {
                       <h5>{service.title}</h5>
                       <p>{service.para}</p>
                       <button className="service2_btn">
-                        <Link to={"/service"}>Learn More</Link>
+                        <Link to={service.link}>Learn More</Link>
                         <FaLongArrowAltRight className="ms-2" />
                       </button>
                     </div>

@@ -57,7 +57,7 @@ const PrivateNursing_details = () => {
     <>
       <section>
         <Container>
-          <Row className="g-5">
+          <Row className="g-4">
             <Col className="text-start pe-5" lg={9}>
               <h2 className="fs-3 fw-bold" style={{ color: "#012a4a" }}>
                 24 Hours In-Home Nursing services

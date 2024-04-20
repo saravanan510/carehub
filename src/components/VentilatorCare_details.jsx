@@ -244,7 +244,7 @@ const VentilatorCare_details = () => {
       </section> */}
       <section>
         <Container>
-          <Row className="g-5">
+          <Row className="g-4">
             <Col className="text-start pe-5" lg={9}>
               <h2 className="fs-3 fw-bold" style={{ color: "#012a4a" }}>
                 Ventilator Care
