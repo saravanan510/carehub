@@ -602,7 +602,7 @@ ul.breadcrumb li a:hover {
 }
 .service_page_features_list li {
   display: flex;
-  align-items: center;
+  align-items: start;
   padding: 0.4rem;
 }
 .service_feature {

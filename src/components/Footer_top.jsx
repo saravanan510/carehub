@@ -14,14 +14,14 @@ const Footer_top = () => {
             <img src={Logo} width="80px" />
             <div>
               <h5 className="fs-5 fw-bold">Carehub Healthcare</h5>
-              <p>At Carehub Healthcare</p>
+              <p className="m-0">At Carehub Healthcare</p>
             </div>
           </Col>
           <Col className="ft_item" md={6} sm={12}>
             <img src={Care} width="48px" />
             <div>
               <h5 className="fs-5 fw-bold">+ (123) 1800 - 567 - 8990</h5>
-              <p>At Carehub Healthcare</p>
+              <p className="m-0">At Carehub Healthcare</p>
             </div>
           </Col>
         </Row>

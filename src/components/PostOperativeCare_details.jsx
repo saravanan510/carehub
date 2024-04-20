@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import emailjs from "@emailjs/browser";
 import FeatureIcon from "../assets/features.svg";
+import NursingServices from "../assets/Nursing-services.png";
 
 const services = [
   "24 HOURS IN-HOME NURSING SERVICES",
@@ -57,6 +58,9 @@ const PostOperativeCare_details = () => {
       <section>
         <Container>
           <Row className="g-4">
+            <Col className="service_img me-6 d-block d-sm-none">
+              <img src={NursingServices} />
+            </Col>
             <Col className="text-start pe-5" lg={9}>
               <h2 className="fs-3 fw-bold" style={{ color: "#012a4a" }}>
                 Post Operative Care

@@ -70,7 +70,7 @@ const PrivateNursing_list = () => {
       <section>
         <Container>
           <Row className="g-4">
-            <Col lg={9} className="service_img me-6">
+            <Col lg={9} className="service_img me-6 d-none d-sm-block">
               <img src={NursingServices} />
             </Col>
             <Col className="otherservices rounded-4">
