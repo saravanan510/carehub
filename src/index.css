@@ -581,10 +581,10 @@ input {
 }
 @media (max-width: 425px) {
   .otherservices {
-    padding: 1rem;
+    padding: 1.6rem 1rem;
   }
   .booking {
-    padding: 1rem;
+    padding: 1.6rem 1rem;
   }
 }
 
