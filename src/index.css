@@ -709,6 +709,9 @@ ul.breadcrumb li a:hover {
 .action-item a {
   text-decoration: none;
 }
+.action-item p {
+  font-size: 13px;
+}
 .action-item {
   display: flex;
   flex-direction: column;
