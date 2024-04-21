@@ -7,7 +7,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="assistance">
+    <section className="assistance" id="#aboutus">
       <Container>
         <Row className="assistance_row">
           <Col lg={4} className="about_img">

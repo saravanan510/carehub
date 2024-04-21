@@ -61,7 +61,7 @@ const BookAppointment = () => {
           placeholder="Enter your name"
           value={form.fullName}
           onChange={handleChange}
-          className="border-0 mb-2 p-2"
+          className="border-0 mb-3 p-2"
           required
         />
         <br />
@@ -73,7 +73,7 @@ const BookAppointment = () => {
           placeholder="Enter your email"
           value={form.email}
           onChange={handleChange}
-          className="border-0 mb-2 p-2"
+          className="border-0 mb-3 p-2"
           required
         />
         <br />
@@ -85,7 +85,7 @@ const BookAppointment = () => {
           placeholder="Enter your phoneNumber"
           value={form.phoneNumber}
           onChange={handleChange}
-          className="border-0 mb-2 p-2"
+          className="border-0 mb-3 p-2"
           required
         />
         <br />
@@ -96,7 +96,7 @@ const BookAppointment = () => {
           name="date"
           value={form.date}
           onChange={handleChange}
-          className="border-0 mb-2 p-2"
+          className="border-0 mb-3 p-2"
           required
         />
         <br />
@@ -106,7 +106,7 @@ const BookAppointment = () => {
           value={form.service}
           name="service"
           onChange={handleChange}
-          className="servicedrop border mb-2 p-2"
+          className="servicedrop border mb-3 p-2"
           required
         >
           <option>Select category</option>

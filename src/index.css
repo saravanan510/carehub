@@ -484,6 +484,9 @@ a {
   .ft_item {
     margin-bottom: 1.4rem;
   }
+  .footer {
+    margin-bottom: 70px;
+  }
 }
 
 /*------------------ Services Page -------------------------*/
@@ -513,12 +516,12 @@ a {
   border-radius: var(--radius-1);
 }
 .otherservices {
-  padding: 1.4rem;
+  padding: 2rem 1.6rem;
   background-color: #dfe9eb;
   height: fit-content;
 }
 .booking {
-  padding: 1.4rem;
+  padding: 2rem 1.6rem;
   background-color: #dfe9eb;
   height: fit-content;
 }
@@ -534,7 +537,7 @@ a {
   padding: 0;
 }
 .otherservices li {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 .otherservices li a:hover {
   color: var(--color-light-green);
@@ -683,5 +686,34 @@ ul.breadcrumb li a:hover {
   }
   .about_img img {
     width: 100%;
+  }
+}
+
+/*------------------ Action -------------------------*/
+
+.fixed-actionbg {
+  display: none;
+  background-color: var(--color-blue);
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+.action-item p {
+  color: white;
+  margin: 0px;
+  font-weight: 500;
+}
+.action-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .fixed-actionbg {
+    display: block;
   }
 }
