@@ -16,24 +16,24 @@ const Action = () => {
             <div className="action-item">
               <a href="tel:+919600180505">
                 <IoIosCall style={{ color: "white" }} className="fs-2" />
+                <p>Call US</p>
               </a>
-              <p>Call US</p>
             </div>
           </Col>
           <Col className="text-center">
             <div className="action-item">
               <Link to={"/contact"}>
                 <IoIosContact style={{ color: "white" }} className="fs-2" />
+                <p>CALL BACK</p>
               </Link>
-              <p>CALL BACK</p>
             </div>
           </Col>
           <Col className="text-center">
             <div className="action-item">
               <a href="https://wa.me/919600180505">
                 <IoLogoWhatsapp style={{ color: "white" }} className="fs-2" />
+                <p>WHATSAPP</p>
               </a>
-              <p>WHATSAPP</p>
             </div>
           </Col>
         </Row>

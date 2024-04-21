@@ -694,7 +694,7 @@ ul.breadcrumb li a:hover {
 .fixed-actionbg {
   display: none;
   background-color: var(--color-blue);
-  padding: 10px 20px;
+  padding: 10px 12px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -704,13 +704,12 @@ ul.breadcrumb li a:hover {
 .action-item p {
   color: white;
   margin: 0px;
-  font-weight: 500;
+  margin-top: 4px;
 }
 .action-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
 }
 @media only screen and (max-width: 600px) {
   .fixed-actionbg {
