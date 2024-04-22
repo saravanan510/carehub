@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { TbNurse } from "react-icons/tb";
-
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 const cardItems = [
   {
     title: "Private Nursing",
@@ -16,7 +16,7 @@ const cardItems = [
   },
   {
     title: "Post-Hospitalization",
-    para: "Anybody's life can be completely upended by a serious sickness, accident, or other health incident",
+    para: "Anybody's life can be completely upended by a serious sickness, accident, or other health incident.",
   },
   {
     title: "Palliative Care",
@@ -29,13 +29,15 @@ const ComperhensiveService = () => {
     <section className="comp">
       <Container>
         <Row>
-          <Col className="header ">
-            <h2 className="fs-3 fw-bold">Our Comprehensive Services</h2>
-            <p>
-              At Carehub Healthcare, we offer a wide range of comprehensive
-              services designed to cater to the unique needs of our clients.
-            </p>
-          </Col>
+          <AnimatedOnScroll animationIn="animate__slideInUp">
+            <Col className="header animate__animated animate__fadeInDown">
+              <h2 className="fs-2 fw-bold">Our Comprehensive Services</h2>
+              <p>
+                At Carehub Healthcare, we offer a wide range of comprehensive
+                services designed to cater to the unique needs of our clients.
+              </p>
+            </Col>
+          </AnimatedOnScroll>
         </Row>
         <Row className="g-4">
           {cardItems.map((item) => {

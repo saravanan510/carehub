@@ -4,10 +4,11 @@ import Col from "react-bootstrap/Col";
 import Assistance from "../assets/faq.png";
 import list_icon from "../assets/list-icon.svg";
 import React from "react";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 const AboutUs = () => {
   return (
-    <section className="assistance" id="#aboutus">
+    <section className="assistance">
       <Container>
         <Row className="assistance_row">
           <Col lg={4} className="about_img">
@@ -17,10 +18,12 @@ const AboutUs = () => {
           <Col>
             <Row className="mb-4">
               <Col>
-                <h2 className="about_heading fs-3 fw-bold">
-                  Why choose a Carehub Healthcare Private Nurse?
-                </h2>
-                <p>
+                <AnimatedOnScroll animationIn="animate__slideInUp ">
+                  <h2 className="about_heading fs-2 fw-bold animate__animated animate__fadeInDown">
+                    Why choose a Carehub Healthcare Private Nurse?
+                  </h2>
+                </AnimatedOnScroll>
+                <p className="about_para">
                   Choosing 1-2-1 private nursing care with Carehub Healthcare
                   ensures you have a smooth recovery, peace of mind and have
                   continued involvement of family and friends as you wish.  As

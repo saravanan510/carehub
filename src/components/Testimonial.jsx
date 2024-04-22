@@ -33,9 +33,12 @@ function Testimonial() {
             <Slider {...settings}>
               <div className="testimonial_review">
                 <img src={Client_img} alt="" className="testimonial_profile" />
-                <h3 style={{ color: "white", fontWeight: 600 }}>
+                <h2
+                  style={{ color: "white", fontWeight: 600 }}
+                  className="mb-3"
+                >
                   Great Staff!
-                </h3>
+                </h2>
                 <p style={{ color: "white" }}>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's

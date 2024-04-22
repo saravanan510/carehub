@@ -2,19 +2,21 @@ import Accordion from "react-bootstrap/Accordion";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 function Question2() {
   return (
     <section>
       <Container>
         <Row>
-          <Col className="header ">
-            <h2 className="fs-3 fw-bold">Frequently Asked Questions</h2>
-            <p>
-              At Carehub Healthcare, we offer a wide range of comprehensive
-              services designed to cater to the unique needs of our clients.
-            </p>
-          </Col>
+          <AnimatedOnScroll animationIn="animate__slideInUp">
+            <Col className="header animate__animated animate__fadeInDown">
+              <h2 className="fs-3 fw-bold">Frequently Asked Questions</h2>
+              <p>
+                At Carehub Healthcare, we offer a wide range of comprehensive
+                services designed to cater to the unique needs of our clients.
+              </p>
+            </Col>
+          </AnimatedOnScroll>
         </Row>
         <Row className="justify-content-md-center">
           <Col lg={8}>

@@ -112,13 +112,15 @@ const Services = () => {
     <section className="service ">
       <Container>
         <Row>
-          <Col className="header ">
-            <h2 className="fs-3 fw-bold">What Services we offer</h2>
-            <p>
-              At Carehub Healthcare, we offer a wide range of comprehensive
-              services designed to cater to the unique needs of our clients.
-            </p>
-          </Col>
+          <AnimatedOnScroll animationIn="animate__slideInUp">
+            <Col className="header animate__animated animate__fadeInDown">
+              <h2 className="fs-3 fw-bold">What Services we offer</h2>
+              <p>
+                At Carehub Healthcare, we offer a wide range of comprehensive
+                services designed to cater to the unique needs of our clients.
+              </p>
+            </Col>
+          </AnimatedOnScroll>
         </Row>
         <Row className="d-flex flex-wrap g-4">
           {services.map((service) => {

@@ -5,7 +5,7 @@
   --color-light-green: #009b45;
   --color-dark-green: #014815;
   --color-primary-text: #012a4a;
-  --color-secondary-text: #213c42;
+  --color-secondary-text: #213c42e1;
   --color-white: #fff;
   --color-bg-1: #f7fafb;
   --color-bg-2: #f5faf7;
@@ -76,13 +76,15 @@ p {
 }
 .header h2 {
   color: var(--color-primary-text);
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 .header p {
   font-family: "Open Sans", sans-serif;
   color: var(--color-secondary-text);
-  width: 70ch;
-  line-height: 1.5;
+  width: 80ch;
+  line-height: 1.6;
+  color: var(--color-secondary-text);
+  font-weight: 500;
 }
 a {
   text-decoration: none;
@@ -91,6 +93,7 @@ a {
   .header p {
     font-size: 0.9rem;
     width: 100%;
+    line-height: 1.4;
   }
   .header {
     margin-bottom: 1.8rem;
@@ -107,7 +110,7 @@ a {
 .topBar {
   background-color: var(--color-blue);
   color: var(--color-white);
-  padding: 0.4rem 0;
+  padding: 0.6rem 0;
 }
 
 /*------------------ Nav Bar-------------------------*/
@@ -116,7 +119,7 @@ a {
   width: 4rem;
 }
 .nav_item {
-  gap: 1rem;
+  gap: 1.6rem;
   font-weight: 500;
 }
 .mobile-toggle {
@@ -138,11 +141,14 @@ a {
 }
 .dropdown {
   font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
+
 .nav_service_link a {
   text-decoration: none;
   color: var(--color-primary-text);
 }
+
 /*------------------ Banner -------------------------*/
 .banner img {
   height: 80vh;
@@ -161,16 +167,26 @@ a {
 
   border-radius: var(--radius-1);
   color: white;
-  margin-top: 1.4rem;
+  margin-top: 0.6rem;
+}
+.banner_caption h1 {
+  line-height: 1.1;
+  margin-bottom: 1rem;
 }
 .banner_caption p {
-  color: white;
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 18px;
 }
 
 @media (max-width: 475px) {
   .banner_caption {
     position: absolute;
     top: 20%;
+    left: 6%;
+    right: 6%;
+  }
+  .banner_caption p {
+    line-height: 1.2;
   }
   .banner img {
     height: 70vh;
@@ -183,19 +199,20 @@ a {
 }
 .comperhensive_card {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0.6rem;
   border-radius: var(--radius-2);
 }
 .comp_service-title h6 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--color-primary-text);
   margin-bottom: 0.8rem;
   font-weight: 700;
 }
 .comp_service-para {
   font-size: 0.9rem;
-  line-height: 1.3;
+  font-weight: 500;
+  line-height: 1.4;
   color: var(--color-secondary-text);
   font-family: "Open Sans", sans-serif;
 }
@@ -265,13 +282,14 @@ a {
 }
 .service2_card {
   position: relative;
-  height: 360px;
+  height: 400px;
 }
 .service2_card-body p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   line-height: 1.2;
-  color: #012a4ae8;
+  font-weight: 500;
+  color: var(--color-secondary-text);
 }
 .service2_card-body h5 {
   font-size: 1rem;
@@ -291,6 +309,7 @@ a {
   padding: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   text-align: center;
+  height: 240px;
 }
 .service2_card-body:hover {
   background-color: var(--color-light-green);
@@ -335,14 +354,17 @@ a {
   }
   .service2_card {
     position: relative;
-    height: 400px;
+    height: 430px;
+  }
+  .service2_card-body {
+    height: 212px;
   }
 }
 
 /*------------------ Assistance -------------------------*/
 
 .assistance {
-  padding: 5rem 0;
+  padding: 80px 0;
 }
 .assistence_icon {
   color: var(--color-light-green);
@@ -660,14 +682,29 @@ ul.breadcrumb li a:hover {
 }
 .about_heading {
   color: var(--color-primary-text);
-  margin-bottom: 24px;
+  margin-bottom: 12px;
+}
+.about_para {
+  line-height: 1.4;
+  color: var(--color-secondary-text);
+  margin-bottom: 20px;
 }
 .about_sub {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 1rem;
   background-color: var(--color-bg-2);
+  border-radius: var(--radius-1);
 }
 .about_list {
   display: flex;
+}
+.about_list p {
+  font-weight: 500;
+  color: var(--color-blue);
+  line-height: 1.4;
+  margin: 0;
 }
 .about_icon {
   margin-right: 1rem;

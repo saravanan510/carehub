@@ -21,7 +21,7 @@ function UncontrolledExample() {
         )}
 
         <Carousel.Caption className="banner_caption">
-          <h1 className={isMobile ? "fs-2 fw-bold" : "fw-bold"}>
+          <h1 className={isMobile ? "fw-bold" : "fw-bold"}>
             Private at Home Nursing Care <br /> Services in UAE
           </h1>
           <p>
@@ -40,7 +40,7 @@ function UncontrolledExample() {
           <img src={Banner_2} alt="First slide" className="" />
         )}
         <Carousel.Caption className="banner_caption">
-          <h1 className={isMobile ? "fs-2 fw-bold" : "fw-bold"}>
+          <h1 className={isMobile ? "fw-bold" : "fw-bold"}>
             Individualized care from a dedicated <br /> nurse or team of nurses
           </h1>
           <p>
@@ -59,7 +59,7 @@ function UncontrolledExample() {
           <img src={Banner_3} alt="First slide" className="" />
         )}
         <Carousel.Caption className="banner_caption">
-          <h1 className={isMobile ? "fs-2 fw-bold" : "fw-bold"}>
+          <h1 className={isMobile ? "fw-bold" : "fw-bold"}>
             Personalized care plans tailored to <br /> your unique needs
           </h1>
           <p>

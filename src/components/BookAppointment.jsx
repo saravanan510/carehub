@@ -2,20 +2,20 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const services = [
-  "24 HOURS IN-HOME NURSING SERVICES",
-  "POST OPERATIVE CARE",
-  "VENTILATOR CARE AT HOME",
-  "PALLIATIVE CARE",
-  "ELDERLY CARE SERVICES/CARETAKERS",
-  "PEDIATRIC PALLIATIVE CARE SERVICES AT HOME",
-  "PARALYTIC CARE SERVICES AT HOME",
-  "PARKINSON CARE",
-  "PHYSIOTHERAPY SERVICES",
-  "DOCTOR HOME VISITS",
-  "MEDICAL TOURISM",
-  "INJECTION SERVICES AT HOME",
-  "BLOOD TEST AT HOME",
-  "HYDRAFACIAL SERVICES AT HOME",
+  "24 Hours In-Home Nursing services",
+  "Post Operative Care",
+  "Ventilator Care",
+  "Palliative Care",
+  "Elderly Care",
+  "Pediatric Palliative",
+  "Paralytic Care",
+  "Parkinson Care",
+  "Physiotherapy Services",
+  "Doctor Home Visits",
+  "Medical Tourism",
+  "Injection Services",
+  "Blood Test",
+  "Hydrafacial Services",
 ];
 
 const BookAppointment = () => {

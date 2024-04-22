@@ -99,7 +99,7 @@ export default function NavBar() {
           </Nav>
           <button
             type="button"
-            className={isMobile ? "custom-button mt-3" : "custom-button"}
+            className={isMobile ? "custom-button mt-3" : "custom-button px-4 "}
           >
             <Link to={"/contact"}>Contact </Link>
           </button>

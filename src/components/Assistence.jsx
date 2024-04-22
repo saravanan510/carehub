@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Assistance from "../assets/faq.png";
 import list_icon from "../assets/list-icon.svg";
 import React from "react";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 const AboutUs = () => {
   return (
@@ -13,11 +14,13 @@ const AboutUs = () => {
           <Col lg={8}>
             <Row className="mb-4">
               <Col>
-                <h2 className="about_heading fs-3 fw-bold">
-                  Key Benefits of Choosing Carehub Healthcare
-                </h2>
+                <AnimatedOnScroll animationIn="animate__slideInUp">
+                  <h2 className="about_heading fs-3 fw-bold mb-4 animate__animated animate__fadeInDown">
+                    Key Benefits of Choosing Carehub Healthcare
+                  </h2>
+                </AnimatedOnScroll>
                 <div>
-                  <div className="about_list">
+                  <div className="about_list mb-3">
                     <div className="about_icon">
                       <img src={list_icon} />
                     </div>
@@ -27,7 +30,7 @@ const AboutUs = () => {
                       care.
                     </p>
                   </div>
-                  <div className="about_list">
+                  <div className="about_list mb-3">
                     <div className="about_icon">
                       <img src={list_icon} />
                     </div>
@@ -36,7 +39,7 @@ const AboutUs = () => {
                       medical history and personal wishes.
                     </p>
                   </div>
-                  <div className="about_list">
+                  <div className="about_list mb-3">
                     <div className="about_icon">
                       <img src={list_icon} />
                     </div>
@@ -48,7 +51,7 @@ const AboutUs = () => {
                       rehabilitation.
                     </p>
                   </div>
-                  <div className="about_list">
+                  <div className="about_list mb-3">
                     <div className="about_icon">
                       <img src={list_icon} />
                     </div>
@@ -58,7 +61,7 @@ const AboutUs = () => {
                       support.
                     </p>
                   </div>
-                  <div className="about_list">
+                  <div className="about_list mb-3">
                     <div className="about_icon">
                       <img src={list_icon} />
                     </div>
