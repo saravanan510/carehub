@@ -24,7 +24,7 @@ const Action = () => {
             <div className="action-item">
               <Link to={"/contact"}>
                 <IoIosContact style={{ color: "white" }} className="fs-2" />
-                <p>CALL BACK</p>
+                <p>Call Back</p>
               </Link>
             </div>
           </Col>
@@ -32,7 +32,7 @@ const Action = () => {
             <div className="action-item">
               <a href="https://wa.me/919600180505">
                 <IoLogoWhatsapp style={{ color: "white" }} className="fs-2" />
-                <p>WHATSAPP</p>
+                <p>Whatsapp</p>
               </a>
             </div>
           </Col>

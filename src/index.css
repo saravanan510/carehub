@@ -158,8 +158,8 @@ a {
 .banner_caption {
   position: absolute;
   text-align: center;
-  top: 30%;
-  margin-inline: auto;
+  top: 50%;
+  transform: translatey(-50%);
 }
 .banner_btn {
   background-color: #009b45;
@@ -181,9 +181,10 @@ a {
 @media (max-width: 475px) {
   .banner_caption {
     position: absolute;
-    top: 20%;
-    left: 6%;
-    right: 6%;
+    top: 30%;
+    left: 4%;
+    right: 4%;
+    transform: translatey(-30%);
   }
   .banner_caption p {
     line-height: 1.2;
