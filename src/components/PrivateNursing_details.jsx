@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import FeatureIcon from "../assets/features.svg";
-import NursingServices from "../assets/Nursing-services.png";
+import NursingServices from "../assets/Nursing_Services.jpg";
 import BookAppointment from "./BookAppointment";
 import OtherServices from "./OtherServices";
 

@@ -18,6 +18,11 @@ import service_7 from "../assets/Service_7.jpg";
 import service_8 from "../assets/Service_8.jpg";
 import service_9 from "../assets/Service_9.jpg";
 import service_10 from "../assets/Service_10.jpg";
+import service_11 from "../assets/Service_11.jpg";
+import service_12 from "../assets/Service_12.jpg";
+import service_13 from "../assets/Service_13.jpg";
+import service_14 from "../assets/Service_14.jpg";
+
 import { Link } from "react-router-dom";
 
 const services = [
@@ -82,25 +87,25 @@ const services = [
     link: "/doctor-home-visits",
   },
   {
-    image: service_1,
+    image: service_11,
     title: "MEDICAL TOURISM",
     para: "Carehub healthcare is a leading medical tourism company in UAE operating...",
     link: "/medical-tourism",
   },
   {
-    image: service_2,
+    image: service_12,
     title: "INJECTION SERVICES ",
     para: "Injection services at home- Get the facility of getting injections sitting...",
     link: "/injection-services",
   },
   {
-    image: service_3,
+    image: service_13,
     title: "BLOOD TEST AT HOME",
     para: "If you are looking for an emergency Lab test at home, Carehub is with you...",
     link: "/blood-test",
   },
   {
-    image: service_4,
+    image: service_14,
     title: "HYDRAFACIAL SERVICES ",
     para: "Hydrafacial is an innovative and non-invasive skincare treatment that combines...",
     link: "/hydrafacial-services",
