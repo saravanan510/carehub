@@ -64,7 +64,7 @@ const services = [
 const OtherServices = () => {
   return (
     <AnimatedOnScroll animationIn="animate__slideInUp ">
-      <div className="otherservices rounded-4 animate__animated animate__fadeInLeft">
+      <div className="otherservices rounded-4 animate__animated">
         <h3 className="fs-5 fw-bold mb-3" style={{ color: "#012a4a" }}>
           Other Services
         </h3>

@@ -49,7 +49,7 @@ const BookAppointment = () => {
   };
   return (
     <AnimatedOnScroll animationIn="animate__slideInUp ">
-      <div className="booking text-start rounded-4 animate__animated animate__fadeInLeft">
+      <div className="booking text-start rounded-4 animate__animated ">
         <h3 className="fs-5 fw-bold mb-3" style={{ color: "#012a4a" }}>
           Book Appointment
         </h3>
