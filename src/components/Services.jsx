@@ -8,20 +8,20 @@ import { TbNurse } from "react-icons/tb";
 
 import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
-import service_1 from "../assets/Service_1.jpg";
-import service_2 from "../assets/Service_2.jpg";
-import service_3 from "../assets/Service_3.jpg";
-import service_4 from "../assets/Service_4.jpg";
-import service_5 from "../assets/Service_5.jpg";
-import service_6 from "../assets/Service_6.jpg";
-import service_7 from "../assets/Service_7.jpg";
-import service_8 from "../assets/Service_8.jpg";
-import service_9 from "../assets/Service_9.jpg";
-import service_10 from "../assets/Service_10.jpg";
-import service_11 from "../assets/Service_11.jpg";
-import service_12 from "../assets/Service_12.jpg";
-import service_13 from "../assets/Service_13.jpg";
-import service_14 from "../assets/Service_14.jpg";
+import service_1 from "../assets/Service_1.webp";
+import service_2 from "../assets/Service_2.webp";
+import service_3 from "../assets/Service_3.webp";
+import service_4 from "../assets/Service_4.webp";
+import service_5 from "../assets/Service_5.webp";
+import service_6 from "../assets/Service_6.webp";
+import service_7 from "../assets/Service_7.webp";
+import service_8 from "../assets/Service_8.webp";
+import service_9 from "../assets/Service_9.webp";
+import service_10 from "../assets/Service_10.webp";
+import service_11 from "../assets/Service_11.webp";
+import service_12 from "../assets/Service_12.webp";
+import service_13 from "../assets/Service_13.webp";
+import service_14 from "../assets/Service_14.webp";
 
 import { Link } from "react-router-dom";
 

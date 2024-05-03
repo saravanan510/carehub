@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import NursingServices from "../assets/Nursing-services.png";
+import PediatricPalliative from "../assets/Peadiatric_Palliative_Care.webp";
 import BookAppointment from "./BookAppointment";
 import OtherServices from "./OtherServices";
 const PediatricPalliative_details = () => {
@@ -12,7 +12,7 @@ const PediatricPalliative_details = () => {
           <Col className="text-start pe-5" lg={9}></Col>
           <Col lg={8}>
             <div className="service_img">
-              <img src={NursingServices} />
+              <img src={PediatricPalliative} />
             </div>
 
             <div className="text-start pe-5" lg={8}>

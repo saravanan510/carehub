@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import FeatureIcon from "../assets/features.svg";
-import NursingServices from "../assets/Nursing-services.png";
+import Hydrafacial from "../assets/Hydrafacial.webp";
 import BookAppointment from "./BookAppointment";
 import OtherServices from "./OtherServices";
 const HydrafacialServices_details = () => {
@@ -12,7 +12,7 @@ const HydrafacialServices_details = () => {
         <Row>
           <Col lg={8}>
             <div className="service_img">
-              <img src={NursingServices} />
+              <img src={Hydrafacial} />
             </div>
 
             <div className="text-start pe-5" lg={8}>
