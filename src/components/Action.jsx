@@ -30,7 +30,7 @@ const Action = () => {
           </Col>
           <Col className="text-center">
             <div className="action-item">
-              <a href="mailto:info@carehubuae.com">
+              <a href="https://wa.me/+971 55 933 9234">
                 <IoLogoWhatsapp style={{ color: "white" }} className="fs-2" />
                 <p>Whatsapp</p>
               </a>
