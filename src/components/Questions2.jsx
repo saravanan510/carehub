@@ -23,62 +23,53 @@ function Question2() {
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  How can I schedule an appointment?
+                  How can I schedule an appointment?How do I book an appointment
+                  with CareHub Health Care services?
                 </Accordion.Header>
                 <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Booking an appointment with CareHub Health Care is easy!
+                  Simply click on the "Book Appointment" button on our website
+                  to schedule a convenient time slot. You can also fill out the
+                  appointment request form on our site, and our team will get in
+                  touch with you promptly to confirm the appointment.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
                 <Accordion.Header>
-                  How experienced are your nursing staff?
+                  What types of healthcare services does CareHub offer?
                 </Accordion.Header>
                 <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  CareHub Health Care provides a wide range of healthcare
+                  services tailored to meet the unique needs of our clients in
+                  Dubai. Our services include but are not limited to home
+                  nursing care, elderly care, post-operative care,
+                  physiotherapy, and palliative care.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
                 <Accordion.Header>
-                  How do you ensure patient confidentiality?
+                  How can I contact CareHub for more information?
                 </Accordion.Header>
                 <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  For any inquiries or additional information about our
+                  healthcare services, you can reach out to us via phone, email,
+                  or through the contact form on our website. Our friendly team
+                  is always ready to assist you and address any questions or
+                  concerns you may have.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">
                 <Accordion.Header>
-                  How experienced are your nursing staff?
+                  Are there any special discounts or packages available for
+                  long-term care plans with CareHub?
                 </Accordion.Header>
                 <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Yes, CareHub Health Care offers special discounts and packages
+                  for clients opting for long-term care plans. These packages
+                  are designed to provide cost-effective solutions for
+                  individuals and families requiring extended care services.
+                  Contact us to learn more about our long-term care packages and
+                  how they can benefit you or your loved ones.
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>

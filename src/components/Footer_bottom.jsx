@@ -13,53 +13,44 @@ const Footer_bottom = () => {
     <section className="footer">
       <Container>
         <Row>
-          <Col lg={3}>
+          <Col lg={4}>
             <p>
               At CareHub rehabilitation experts create specialized treatment
               plans to meet each patient’s individual needs.
             </p>
           </Col>
-          <Col md={6} lg={3}>
-            <h6>Navigation</h6>
-            <ul className="custom-ul">
-              <li>
-                <Link to={"/"}>Home</Link>
-              </li>
-              <li>
-                <Link to={"/aboutus"}>About Us</Link>
-              </li>
-              <li>
-                <Link to={"/contact"}>Contact Us</Link>
-              </li>
-            </ul>
+
+          <Col md={6} lg={4}>
+            <div>
+              <h6>Quick Link</h6>
+              <ul className="custom-ul">
+                <li>
+                  <Link to={"/"}>Home</Link>
+                </li>
+                <li>
+                  <Link to={"/aboutus"}>About Us</Link>
+                </li>
+                <li>
+                  <Link to={"/contact"}>Contact Us</Link>
+                </li>
+              </ul>
+            </div>
           </Col>
-          <Col md={6} lg={3}>
-            <h6>Quick Link</h6>
-            <ul className="custom-ul">
-              <li>
-                <Link to={"/"}>Home</Link>
-              </li>
-              <li>
-                <Link to={"/aboutus"}>About Us</Link>
-              </li>
-              <li>
-                <Link to={"/contact"}>Contact Us</Link>
-              </li>
-            </ul>
-          </Col>
-          <Col md={6} lg={3}>
-            <h6>Services</h6>
-            <ul className="custom-ul">
-              <li>
-                <Link to={"/private-nursing"}>Private Nursing</Link>
-              </li>
-              <li>
-                <Link to={"/post-operative-care"}>Post Operative Care</Link>
-              </li>
-              <li>
-                <Link to={"/ventilator-care"}>VentilatorCare</Link>
-              </li>
-            </ul>
+          <Col md={6} lg={4}>
+            <div>
+              <h6>Services</h6>
+              <ul className="custom-ul">
+                <li>
+                  <Link to={"/private-nursing"}>Private Nursing</Link>
+                </li>
+                <li>
+                  <Link to={"/post-operative-care"}>Post Operative Care</Link>
+                </li>
+                <li>
+                  <Link to={"/ventilator-care"}>VentilatorCare</Link>
+                </li>
+              </ul>
+            </div>
           </Col>
         </Row>
         <Row className="mt-3 mb-4">
@@ -95,6 +86,7 @@ const Footer_bottom = () => {
             lg={3}
             md={6}
             sm={12}
+            style={{ display: "flex", alignItems: "end" }}
           >
             <FaFacebook className="fs-4 me-3" />
             <IoLogoTwitter className="fs-4 me-3" />

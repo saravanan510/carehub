@@ -40,33 +40,26 @@ function Testimonial() {
                   Great Staff!
                 </h2>
                 <p style={{ color: "white" }}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  "CareHub Health Care provided exceptional home care services
+                  for my elderly mother in Dubai. Their caregivers were not only
+                  highly skilled but also compassionate and attentive to her
+                  needs. I felt confident knowing she was in good hands, and it
+                  made a significant difference in her quality of life. Thank
+                  you, CareHub, for your dedication and professionalism!"
                 </p>
               </div>
               <div className="testimonial_review">
                 <img src={Client_img} alt="" className="testimonial_profile" />
                 <h3 style={{ color: "white", fontWeight: 600 }}>Friendly</h3>
                 <p style={{ color: "white" }}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
-              </div>
-              <div className="testimonial_review">
-                <img src={Client_img} alt="" className="testimonial_profile" />
-                <h3 style={{ color: "white", fontWeight: 600 }}>Loveable</h3>
-                <p style={{ color: "white" }}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  "I can't thank CareHub Health Care enough for the wonderful
+                  support they provided for my family during a challenging time.
+                  Their team went above and beyond to ensure our loved one
+                  received the best possible care at home in Dubai. From
+                  medication management to daily activities, they were there
+                  every step of the way with kindness and expertise. Highly
+                  recommend their services to anyone in need of compassionate
+                  home care."
                 </p>
               </div>
             </Slider>
