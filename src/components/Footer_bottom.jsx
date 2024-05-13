@@ -60,11 +60,13 @@ const Footer_bottom = () => {
             md={6}
             sm={12}
           >
-            <AiFillEnvironment className="fs-4 me-2" />
+            <div style={{ width: "24px", height: "24px", marginRight: "12px" }}>
+              <AiFillEnvironment className="fs-4 me-2" />
+            </div>
+
             <h6 className="mb-0">
-              First Floor, B-4,
-              <br />
-              Gold Building, Near Bus stand, Al-Karama, Dubai, U.A.E
+              First Floor, B-4, Gold Building, Near Bus stand, Al-Karama, Dubai,
+              U.A.E
             </h6>
           </Col>
           <Col
@@ -72,6 +74,7 @@ const Footer_bottom = () => {
             lg={3}
             md={6}
             sm={12}
+            style={{ display: "flex", justifyContent: "flex-end" }}
           >
             <MdCall className="fs-4 me-2" />
             <h6 className="mb-0">+971 55 933 9234</h6>
@@ -81,6 +84,7 @@ const Footer_bottom = () => {
             lg={3}
             md={6}
             sm={12}
+            style={{ display: "flex", justifyContent: "flex-end" }}
           >
             <IoMdMail className="fs-4 me-2" />
             <h6 className="mb-0">info@carehubuae.com</h6>
@@ -90,7 +94,7 @@ const Footer_bottom = () => {
             lg={3}
             md={6}
             sm={12}
-            style={{ display: "flex", alignItems: "end" }}
+            style={{ display: "flex", justifyContent: "flex-end" }}
           >
             <FaFacebook className="fs-4 me-3" />
             <IoLogoTwitter className="fs-4 me-3" />
