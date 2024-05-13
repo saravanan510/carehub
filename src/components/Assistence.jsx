@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Assistance from "../assets/faq.png";
+import Benefits from "../assets/benefits.png";
 import list_icon from "../assets/list-icon.svg";
 import React from "react";
 import { AnimatedOnScroll } from "react-animated-css-onscroll";
@@ -75,7 +75,7 @@ const AboutUs = () => {
             </Row>
           </Col>
           <Col className="about_img">
-            <img src={Assistance} className=" rounded" />
+            <img src={Benefits} className=" rounded" />
           </Col>
         </Row>
       </Container>
