@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 
 const services = [
   {
-    name: "24 Hours In-Home Nursing services",
+    name: "Home Nursing services",
     link: "/private-nursing",
   },
   {

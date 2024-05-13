@@ -23,8 +23,8 @@ function Question2() {
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  How can I schedule an appointment?How do I book an appointment
-                  with CareHub Health Care services?
+                  How do I book an appointment with CareHub Health Care
+                  services?
                 </Accordion.Header>
                 <Accordion.Body>
                   Booking an appointment with CareHub Health Care is easy!
