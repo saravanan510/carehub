@@ -14,7 +14,7 @@ const Action = () => {
         <Row>
           <Col className="text-center">
             <div className="action-item">
-              <a href="tel:+919600180505">
+              <a href="tel:+971 55 933 9234">
                 <IoIosCall style={{ color: "white" }} className="fs-2" />
                 <p>Call US</p>
               </a>
@@ -30,7 +30,7 @@ const Action = () => {
           </Col>
           <Col className="text-center">
             <div className="action-item">
-              <a href="https://wa.me/919600180505">
+              <a href="mailto:info@carehubuae.com">
                 <IoLogoWhatsapp style={{ color: "white" }} className="fs-2" />
                 <p>Whatsapp</p>
               </a>

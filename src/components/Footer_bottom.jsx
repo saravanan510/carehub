@@ -61,7 +61,11 @@ const Footer_bottom = () => {
             sm={12}
           >
             <AiFillEnvironment className="fs-4 me-2" />
-            <h6 className="mb-0">Al-Karama, Dubai, U.A.E</h6>
+            <h6 className="mb-0">
+              First Floor, B-4,
+              <br />
+              Gold Building, Near Bus stand, Al-Karama, Dubai, U.A.E
+            </h6>
           </Col>
           <Col
             className=" footer_contact d-flex align-items-center"
@@ -70,7 +74,7 @@ const Footer_bottom = () => {
             sm={12}
           >
             <MdCall className="fs-4 me-2" />
-            <h6 className="mb-0">+971 58 532 4900</h6>
+            <h6 className="mb-0">+971 55 933 9234</h6>
           </Col>
           <Col
             className="footer_contact d-flex align-items-center"

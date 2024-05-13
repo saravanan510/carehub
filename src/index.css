@@ -120,7 +120,9 @@ a {
 /*------------------ Nav Bar-------------------------*/
 
 .logo {
-  width: 4rem;
+  width: 10rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .nav_item {
   gap: 1.6rem;

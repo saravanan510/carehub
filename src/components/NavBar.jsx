@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/carehub_logo.png";
 import { useMediaQuery } from "react-responsive";
 
 const services = [
