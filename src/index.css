@@ -67,6 +67,10 @@ p {
 .custom-ul li {
   color: rgba(255, 255, 255, 0.856);
 }
+.custom-ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.856);
+}
 .header {
   text-align: center;
   display: flex;

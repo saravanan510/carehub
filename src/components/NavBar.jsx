@@ -63,6 +63,10 @@ const services = [
     name: "Hydrafacial Services",
     link: "/hydrafacial-services",
   },
+  {
+    name: "Post Stroke Recovery",
+    link: "/post-stroke-recovery",
+  },
 ];
 
 export default function NavBar() {

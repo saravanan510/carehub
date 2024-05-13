@@ -9,11 +9,11 @@ const TopBar = () => {
     <div className={isMobile ? "d-none" : "topBar"}>
       <Container>
         <Row>
-          <Col className="fw-semibold">+(123)1800-567-8990</Col>
+          <Col className="fw-semibold">+971 58 532 4900</Col>
           <Col className="text-center fw-semibold">
             24 out 24 hours/Monday-Sunday
           </Col>
-          <Col className="text-end fw-semibold">carehub@info.com</Col>
+          <Col className="text-end fw-semibold">info@carehubuae.com</Col>
         </Row>
       </Container>
     </div>

@@ -21,6 +21,7 @@ import MedicalTourism from "./pages/MedicalTourism";
 import InjectionServices from "./pages/InjectionServices";
 import BloodTest from "./pages/BloodTest";
 import HydrafacialServices from "./pages/HydrafacialServices";
+import PostStrokeRecovery from "./pages/PostStrokeRecovery";
 
 const router = createBrowserRouter([
   {
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
       {
         path: "/hydrafacial-services",
         element: <HydrafacialServices />,
+      },
+      {
+        path: "/post-stroke-recovery",
+        element: <PostStrokeRecovery />,
       },
       {
         path: "/contact",

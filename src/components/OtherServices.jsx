@@ -59,6 +59,10 @@ const services = [
     name: "Hydrafacial Services",
     link: "/hydrafacial-services",
   },
+  {
+    name: "Post Stroke Recovery",
+    link: "/post-stroke-recovery",
+  },
 ];
 
 const OtherServices = () => {

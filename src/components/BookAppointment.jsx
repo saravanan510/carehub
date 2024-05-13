@@ -16,6 +16,7 @@ const services = [
   "Injection Services",
   "Blood Test",
   "Hydrafacial Services",
+  "Post Stroke Recovery",
 ];
 
 const BookAppointment = () => {

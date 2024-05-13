@@ -7,6 +7,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoYoutube } from "react-icons/io";
+import { Link } from "react-router-dom";
 const Footer_bottom = () => {
   return (
     <section className="footer">
@@ -14,35 +15,50 @@ const Footer_bottom = () => {
         <Row>
           <Col lg={3}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus.
+              At CareHub rehabilitation experts create specialized treatment
+              plans to meet each patient’s individual needs.
             </p>
           </Col>
           <Col md={6} lg={3}>
             <h6>Navigation</h6>
             <ul className="custom-ul">
-              <li>Home</li>
-              <li>Page</li>
-              <li>About Us</li>
-              <li>Services</li>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link to={"/aboutus"}>About Us</Link>
+              </li>
+              <li>
+                <Link to={"/contact"}>Contact Us</Link>
+              </li>
             </ul>
           </Col>
           <Col md={6} lg={3}>
             <h6>Quick Link</h6>
             <ul className="custom-ul">
-              <li>Contact Us</li>
-              <li>FAQ's</li>
-              <li>Booking</li>
-              <li>Pages</li>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link to={"/aboutus"}>About Us</Link>
+              </li>
+              <li>
+                <Link to={"/contact"}>Contact Us</Link>
+              </li>
             </ul>
           </Col>
           <Col md={6} lg={3}>
             <h6>Services</h6>
             <ul className="custom-ul">
-              <li>Palliative Care</li>
-              <li>Private Nursing Care</li>
-              <li>24 Hours In-Home Care</li>
-              <li>Post-Hospitalization</li>
+              <li>
+                <Link to={"/private-nursing"}>Private Nursing</Link>
+              </li>
+              <li>
+                <Link to={"/post-operative-care"}>Post Operative Care</Link>
+              </li>
+              <li>
+                <Link to={"/ventilator-care"}>VentilatorCare</Link>
+              </li>
             </ul>
           </Col>
         </Row>
@@ -54,7 +70,7 @@ const Footer_bottom = () => {
             sm={12}
           >
             <AiFillEnvironment className="fs-4 me-2" />
-            <h6 className="mb-0">London Eye, London UK</h6>
+            <h6 className="mb-0">Al-Karama, Dubai, U.A.E</h6>
           </Col>
           <Col
             className=" footer_contact d-flex align-items-center"
@@ -63,7 +79,7 @@ const Footer_bottom = () => {
             sm={12}
           >
             <MdCall className="fs-4 me-2" />
-            <h6 className="mb-0">(+081) 5678 1234</h6>
+            <h6 className="mb-0">+971 58 532 4900</h6>
           </Col>
           <Col
             className="footer_contact d-flex align-items-center"
@@ -72,7 +88,7 @@ const Footer_bottom = () => {
             sm={12}
           >
             <IoMdMail className="fs-4 me-2" />
-            <h6 className="mb-0">mail@nursee.com</h6>
+            <h6 className="mb-0">info@carehubuae.com</h6>
           </Col>
           <Col
             className="footer_contact d-flex align-items-center"

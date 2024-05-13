@@ -20,7 +20,7 @@ const Footer_top = () => {
           <Col className="ft_item" md={6} sm={12}>
             <img src={Care} width="48px" className="me-3" />
             <div>
-              <h5 className="fs-5 fw-bold">+ (123) 1800 - 567 - 8990</h5>
+              <h5 className="fs-5 fw-bold">+971 58 532 4900</h5>
               <p className="m-0">At Carehub Healthcare</p>
             </div>
           </Col>

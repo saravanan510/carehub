@@ -110,6 +110,12 @@ const services = [
     para: "Hydrafacial is an innovative and non-invasive skincare treatment that combines...",
     link: "/hydrafacial-services",
   },
+  {
+    image: service_4,
+    title: "POST STROKE RECOVERY",
+    para: "At CareHub rehabilitation experts create specialized treatment plans to me...",
+    link: "/post-stroke-recovery",
+  },
 ];
 
 const Services = () => {

@@ -22,7 +22,7 @@ function UncontrolledExample() {
 
         <Carousel.Caption className="banner_caption">
           <h1 className={isMobile ? "fw-bold" : "fw-bold"}>
-            Private at Home Nursing Care <br /> Services in UAE
+            To us, it's Personal, Live Well with In-Home Care
           </h1>
           <p>
             At Care hub Healthcare, we know that people are happiest and most
@@ -41,7 +41,7 @@ function UncontrolledExample() {
         )}
         <Carousel.Caption className="banner_caption">
           <h1 className={isMobile ? "fw-bold" : "fw-bold"}>
-            Individualized care from a dedicated <br /> nurse or team of nurses
+            Regenerative Aesthetic care, Where innovation meets excellence
           </h1>
           <p>
             At Care hub Healthcare, we know that people are happiest and most
@@ -60,7 +60,7 @@ function UncontrolledExample() {
         )}
         <Carousel.Caption className="banner_caption">
           <h1 className={isMobile ? "fw-bold" : "fw-bold"}>
-            Personalized care plans tailored to <br /> your unique needs
+            Championing Your Comeback, Elevating Your Future
           </h1>
           <p>
             At Care hub Healthcare, we know that people are happiest and most
