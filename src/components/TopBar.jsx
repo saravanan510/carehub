@@ -30,6 +30,7 @@ const TopBar = () => {
               style={{
                 textDecoration: "none",
                 display: "flex",
+                justifyContent: "flex-end",
                 gap: "8px",
               }}
               href="mailto:info@carehubuae.com"
