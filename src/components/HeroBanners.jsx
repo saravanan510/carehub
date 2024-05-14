@@ -26,7 +26,7 @@ function UncontrolledExample() {
           </h1>
           <p>
             At Care hub Healthcare, we know that people are happiest and most
-            comfortable <br /> when in their own home.
+            comfortable when in their own home.
           </p>
           <Link to={"/contact"}>
             <button className="banner_btn fw-semibold">Book Appointment</button>{" "}
@@ -45,8 +45,7 @@ function UncontrolledExample() {
           </h1>
           <p>
             At Carehub Nursing Services, we understand the importance of
-            maintaining a <br />
-            sense of independence and autonomy for our clients.
+            maintaining a sense of independence and autonomy for our clients.
           </p>
           <Link to={"/contact"}>
             <button className="banner_btn fw-semibold">Book Appointment</button>{" "}
@@ -65,8 +64,7 @@ function UncontrolledExample() {
           </h1>
           <p>
             Access to service of qualified, experienced and internationally
-            trained <br /> medical professionals right in the comfort of your
-            home.
+            trained medical professionals right in the comfort of your home.
           </p>
 
           <Link to={"/contact"}>
