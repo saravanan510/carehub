@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ScrollToTop from "../components/ScrollTop";
 
 const services = [
   "Home Nursing",
@@ -50,6 +51,7 @@ const ContactUs = () => {
 
   return (
     <>
+      <ScrollToTop />
       <div className="servicepage_banner">
         <Container>
           <h2 className="fs-1 fw-semibold text-white">Contact Us</h2>

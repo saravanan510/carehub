@@ -11,7 +11,7 @@ const cardItems = [
     para: "At Carehub Nursing Services, we understand the importance of maintaining a sense of independence and autonomy for our clients. ",
   },
   {
-    title: "24 Hours In-Home",
+    title: "Home Nursing",
     para: "Carehub healthcare  is a leading provider of in-home care services for individuals in need of assistance with daily living activities. ",
   },
   {

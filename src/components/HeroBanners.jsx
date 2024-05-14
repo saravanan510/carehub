@@ -1,10 +1,10 @@
 import Carousel from "react-bootstrap/Carousel";
-import Banner_1 from "../assets/Banner_1.jpg";
-import Banner_2 from "../assets/Banner_2.jpg";
-import Banner_3 from "../assets/Banner_3.jpg";
-import Mobile_Banner_1 from "../assets/Mobile_Banner_1.jpg";
-import Mobile_Banner_2 from "../assets/Mobile_Banner_2.jpg";
-import Mobile_Banner_3 from "../assets/Mobile_Banner_3.jpg";
+import Banner_1 from "../assets/Banner_1.webp";
+import Banner_2 from "../assets/Banner_2.webp";
+import Banner_3 from "../assets/Banner_3.webp";
+import Mobile_Banner_1 from "../assets/Mobile_Banner_1.webp";
+import Mobile_Banner_2 from "../assets/Mobile_Banner_2.webp";
+import Mobile_Banner_3 from "../assets/Mobile_Banner_3.webp";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 

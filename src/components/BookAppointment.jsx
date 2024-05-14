@@ -2,7 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { AnimatedOnScroll } from "react-animated-css-onscroll";
 const services = [
-  "24 Hours In-Home Nursing services",
+  "Home Nursing services",
   "Post Operative Care",
   "Ventilator Care",
   "Palliative Care",

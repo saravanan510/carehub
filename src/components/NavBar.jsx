@@ -88,7 +88,7 @@ export default function NavBar() {
             <Nav.Link as={Link} to={"/"}>
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to={"/"}>
+            <Nav.Link as={Link} to={"/aboutus"}>
               About Us
             </Nav.Link>
             <NavDropdown
