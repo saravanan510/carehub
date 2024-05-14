@@ -22,6 +22,7 @@ import service_11 from "../assets/Service_11.webp";
 import service_12 from "../assets/Service_12.webp";
 import service_13 from "../assets/Service_13.webp";
 import service_14 from "../assets/Service_14.webp";
+import service_15 from "../assets/Service_15.webp";
 
 import { Link } from "react-router-dom";
 
@@ -45,7 +46,7 @@ const services = [
     link: "/ventilator-care",
   },
   {
-    image: service_4,
+    image: service_15,
     title: "PALLIATIVE CARE",
     para: "Palliative care is an essential service that provides comfort and support to...",
     link: "/palliative-care",

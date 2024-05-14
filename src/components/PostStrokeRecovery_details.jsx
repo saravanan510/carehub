@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Palliative from "../assets/Palliative_Care.webp";
+import PostStrokeRecovery from "../assets/Post_Stroke_Recovery.webp";
 import BookAppointment from "./BookAppointment";
 import OtherServices from "./OtherServices";
 
@@ -13,7 +13,7 @@ const PostStrokeRecovery_details = () => {
           <Row>
             <Col lg={8}>
               <div className="service_img">
-                <img src={Palliative} />
+                <img src={PostStrokeRecovery} />
               </div>
 
               <div className="text-start pe-5" lg={8}>
