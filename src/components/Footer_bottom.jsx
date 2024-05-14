@@ -28,7 +28,7 @@ const Footer_bottom = () => {
                   <Link to={"/"}>Home</Link>
                 </li>
                 <li>
-                  <Link to={"/aboutus"}>About Us</Link>
+                  <Link to={"/"}>About Us</Link>
                 </li>
                 <li>
                   <Link to={"/contact"}>Contact Us</Link>
@@ -74,7 +74,6 @@ const Footer_bottom = () => {
             lg={3}
             md={6}
             sm={12}
-            style={{ display: "flex", justifyContent: "flex-end" }}
           >
             <MdCall className="fs-4 me-2" />
             <h6 className="mb-0">+971 55 933 9234</h6>
@@ -84,7 +83,6 @@ const Footer_bottom = () => {
             lg={3}
             md={6}
             sm={12}
-            style={{ display: "flex", justifyContent: "flex-end" }}
           >
             <IoMdMail className="fs-4 me-2" />
             <h6 className="mb-0">info@carehubuae.com</h6>
@@ -94,7 +92,6 @@ const Footer_bottom = () => {
             lg={3}
             md={6}
             sm={12}
-            style={{ display: "flex", justifyContent: "flex-end" }}
           >
             <FaFacebook className="fs-4 me-3" />
             <IoLogoTwitter className="fs-4 me-3" />
@@ -104,7 +101,7 @@ const Footer_bottom = () => {
         <hr />
         <Row>
           <Col className="text-center">
-            <small>© 2022 Carehub • All Rights Reserved</small>
+            <small>© 2024 Carehub • All Rights Reserved</small>
           </Col>
         </Row>
       </Container>

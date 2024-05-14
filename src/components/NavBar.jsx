@@ -75,7 +75,9 @@ export default function NavBar() {
     <Navbar expand="lg" className="py-0">
       <Container>
         <Navbar.Brand>
-          <img src={Logo} className="logo" alt="" />
+          <Link to={"/"}>
+            <img src={Logo} className="logo" alt="" />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
@@ -86,7 +88,9 @@ export default function NavBar() {
             <Nav.Link as={Link} to={"/"}>
               Home
             </Nav.Link>
-            <Nav.Link>About Us</Nav.Link>
+            <Nav.Link as={Link} to={"/"}>
+              About Us
+            </Nav.Link>
             <NavDropdown
               title="Services"
               id="basic-nav-dropdown"
