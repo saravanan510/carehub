@@ -1,7 +1,9 @@
-# .htaccess file
-
 Options -MultiViews
 RewriteEngine On
 RewriteBase /
 
-# Redirect
+# Redirect all traffic to index.html except actual files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
+
