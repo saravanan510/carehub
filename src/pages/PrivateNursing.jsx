@@ -9,9 +9,7 @@ const PrivateNursing = () => {
       <ScrollToTop />
       <div className="servicepage_banner">
         <Container>
-          <h2 className="fs-2 fw-bold text-white">
-            24 HOURS IN-HOME NURSING SERVICES
-          </h2>
+          <h2 className="fs-2 fw-bold text-white">HOME NURSING SERVICES</h2>
           <ul class="breadcrumb">
             <li>
               <Link to={"/"}>Home</Link>

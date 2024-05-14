@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { AnimatedOnScroll } from "react-animated-css-onscroll";
 const services = [
   {
-    name: "Nursing services",
-    link: "/private-nursing",
+    name: "Home Nursing Services",
+    link: "/home-nursing-services",
   },
   {
     name: "Post Operative Care",

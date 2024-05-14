@@ -30,7 +30,7 @@ const services = [
     image: service_1,
     title: "HOME NURSING",
     para: "Carehub healthcare  is a leading provider of in-home care services...",
-    link: "/private-nursing",
+    link: "/home-nursing-services",
   },
   {
     image: service_2,

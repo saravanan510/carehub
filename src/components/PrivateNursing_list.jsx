@@ -8,8 +8,8 @@ import FeatureIcon from "../assets/features.svg";
 
 const services = [
   {
-    name: "Nursing services",
-    link: "/private-nursing",
+    name: "Home Nursing Services",
+    link: "/home-nursing-services",
   },
   {
     name: "Post Operative Care",

@@ -19,7 +19,7 @@ const PrivateNursing_details = () => {
 
               <div className="text-start pe-5" lg={8}>
                 <h2 className="fs-3 fw-bold" style={{ color: "#012a4a" }}>
-                  24 Hours In-Home Nursing services
+                  Home Nursing services
                 </h2>
                 <p>
                   Carehub healthcare is a leading provider of in-home care
