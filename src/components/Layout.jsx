@@ -8,11 +8,14 @@ import "animate.css/animate.css";
 import Action from "./Action";
 
 const Layout = () => {
+  const isMobile = useMediaQuery({ maxWidth: 475 });
   return (
     <>
       <ScrollToTop />
       <Header />
-      <Outlet />
+      <div style={{ marginTop: isMobile ? "80px" : "124px" }}>
+        <Outlet />
+      </div>
       <Footer />
       <Action />
     </>

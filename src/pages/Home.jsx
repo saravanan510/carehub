@@ -12,7 +12,7 @@ import SimpleSlider from "../components/SimpleSlider";
 
 const Home = () => {
   return (
-    <>
+    <div>
       <HeroBanners />
       <ComperhensiveService />
       <AboutUs />
@@ -21,7 +21,7 @@ const Home = () => {
       <Testimonial />
       <Question2 />
       <Broucher />
-    </>
+    </div>
   );
 };
 
