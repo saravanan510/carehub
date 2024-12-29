@@ -34,7 +34,6 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
     emailjs
       .send("service_rfhez58", "template_yvq22yp", form, {
         publicKey: "9oAfAPIpODABx48KN",

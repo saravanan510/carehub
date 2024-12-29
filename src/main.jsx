@@ -22,6 +22,7 @@ import InjectionServices from "./pages/InjectionServices";
 import BloodTest from "./pages/BloodTest";
 import HydrafacialServices from "./pages/HydrafacialServices";
 import PostStrokeRecovery from "./pages/PostStrokeRecovery";
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
@@ -106,8 +107,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <Layout />
-    </RouterProvider>
+    <HelmetProvider>
+      <RouterProvider router={router}>
+        <Layout />
+      </RouterProvider>
+    </HelmetProvider>
   </React.StrictMode>
 );
