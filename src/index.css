@@ -781,3 +781,60 @@ ul.breadcrumb li a:hover {
     display: block;
   }
 }
+
+/*------------------ BookBloodTest Page -------------------------*/
+
+.bookbloodtest_banner {
+  background-color: rgb(249, 249, 249);
+  padding: 60px 0;
+}
+.bookbloodtest_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 300px;
+  border-radius: var(--radius-2);
+}
+.bookbloodtest_img img {
+  max-height: 100%;
+
+  /* Optional: To maintain aspect ratio */
+  object-fit: contain;
+}
+.bookbloodtest_tag {
+  background-color: #ffd500;
+  border-radius: 4px;
+}
+.price_card {
+  height: 400px;
+  padding: 24px;
+  background-color: rgb(249, 249, 249);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.popular {
+  background-color: #003f4e;
+  color: #f5faf7;
+}
+.selectTest {
+  background-color: rgb(249, 249, 249);
+}
+.searchbox {
+  background-color: white;
+  width: 80%;
+  border-radius: 6px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+.listAdd {
+  display: flex;
+  align-items: center;
+}
+.testCard {
+  background-color: white;
+  padding: 12px;
+  border-radius: 6px;
+}

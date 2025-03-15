@@ -7,6 +7,7 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PrivateNursing from "./pages/PrivateNursing";
 import ContactUs from "./pages/ContactUs";
+import BookBloodTest from "./pages/BookBloodTest";
 import AboutUs from "./components/Assistence";
 import PostOperativeCare from "./pages/PostOperativeCare";
 import VentilatorCare from "./pages/VentilatorCare";
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
       {
         path: "/aboutus",
         element: <AboutUs />,
+      },
+      {
+        path: "/bookbloodtest",
+        element: <BookBloodTest />,
       },
     ],
   },

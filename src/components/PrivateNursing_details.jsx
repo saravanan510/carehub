@@ -19,95 +19,138 @@ const PrivateNursing_details = () => {
 
               <div className="text-start pe-5" lg={8}>
                 <h2 className="fs-3 fw-bold" style={{ color: "#012a4a" }}>
-                  Home Nursing services
+                  Home Nursing Services in Dubai
                 </h2>
                 <p>
-                  Carehub healthcare is a leading provider of in-home care
-                  services for individuals in need of assistance with daily
-                  living activities. Our 24-hour care services are designed to
-                  help individuals maintain their independence and quality of
-                  life in the comfort of their own homes.
-                </p>
-                <p>
-                  One of the many benefits of our 24-hour in-home care services
-                  is that they allow individuals to receive the care they need
-                  without having to leave their home and familiar surroundings.
-                  Our team of highly trained and compassionate caregivers is
-                  available around the clock to provide assistance with a wide
-                  range of activities, including:
+                  Carehub Healthcare is a trusted name in Home Nursing Services
+                  Dubai, offering expert at-home care for those needing support
+                  with daily tasks. Our 24/7 Home Nursing in Dubai ensures
+                  individuals can live comfortably and independently in their
+                  own homes, surrounded by familiarity.
                 </p>
 
                 <h4 className="fs-5 fw-bold" style={{ color: "#012a4a" }}>
-                  Services
+                  Why Choose Our Home Care Nursing in Dubai?
                 </h4>
+
+                <p>
+                  With Home Nursing Services Dubai, your loved ones avoid the
+                  stress of moving to a facility. Our team of professional,
+                  caring nurses is available day and night to assist with:
+                </p>
+
+                <h5 className="fs-6 fw-bold" style={{ color: "#012a4a" }}>
+                  Services We Provide
+                </h5>
 
                 <ul className="service_page_features_list">
                   <li>
                     <img src={FeatureIcon} className="me-2" />
-                    <p className="service_feature m-0 fw-semibold">
-                      Personal care, such as bathing, grooming, and dressing
+                    <p className="service_feature m-0 fw-normal">
+                      <span className="fw-semibold">Personal Care:</span> Help
+                      with bathing, dressing, and grooming.
                     </p>
                   </li>
                   <li>
                     <img src={FeatureIcon} className="me-2" />
-                    <p className="service_feature m-0 fw-semibold">
-                      Medication management and administration
+                    <p className="service_feature m-0 fw-normal">
+                      <span className="fw-semibold">Medication Support:</span>{" "}
+                      Giving medicines on time and managing prescriptions.
                     </p>
                   </li>
                   <li>
                     <img src={FeatureIcon} className="me-2" />
-                    <p className="service_feature m-0 fw-semibold">
-                      Meal preparation and feeding
+                    <p className="service_feature m-0 fw-normal">
+                      <span className="fw-semibold">Daily Meals:</span>{" "}
+                      Preparing nutritious food and assisting with feeding.
                     </p>
                   </li>
                   <li>
                     <img src={FeatureIcon} className="me-2" />
-                    <p className="service_feature m-0 fw-semibold">
-                      Mobility assistance and transportation
+                    <p className="service_feature m-0 fw-normal">
+                      <span className="fw-semibold">Mobility & Transport:</span>{" "}
+                      Safe movement at home and support for appointments.
                     </p>
                   </li>
                   <li>
                     <img src={FeatureIcon} className="me-2" />
-                    <p className="service_feature m-0 fw-semibold">
-                      Light housekeeping and laundry
+                    <p className="service_feature m-0 fw-normal">
+                      <span className="fw-semibold">Home Help:</span> Light
+                      cleaning, laundry, and organizing living spaces.
                     </p>
                   </li>
                   <li>
                     <img src={FeatureIcon} className="me-2" />
-                    <p className="service_feature m-0 fw-semibold">
-                      Companionship and social engagement
+                    <p className="service_feature m-0 fw-normal">
+                      <span className="fw-semibold">Companionship:</span>{" "}
+                      Friendly interaction and activities to boost happiness.
                     </p>
                   </li>
                 </ul>
 
+                <h5 className="fs-6 fw-bold" style={{ color: "#012a4a" }}>
+                  Specialized Home Care Nursing in Dubai
+                </h5>
+
                 <p>
-                  Our caregivers are also equipped to provide specialized care
-                  for individuals with chronic conditions, such as Alzheimer's
-                  and dementia, as well as those recovering from surgery or
-                  illness.
+                  We offer tailored care for seniors, those recovering from
+                  surgery, or patients with long-term conditions like
+                  Alzheimer’s, diabetes, or dementia. Our nurses are trained to
+                  handle medical needs while providing emotional comfort.
                 </p>
+                <h5 className="fs-6 fw-bold" style={{ color: "#012a4a" }}>
+                  Personalized Care Plans
+                </h5>
                 <p>
-                  At Carehub Nursing Services, we understand the importance of
-                  maintaining a sense of independence and autonomy for our
-                  clients. That's why we work closely with each individual and
-                  their loved ones to create a personalized care plan that meets
-                  their unique needs and preferences. We also strive to provide
-                  continuity of care by assigning a primary caregiver to each
-                  client, ensuring that they have a familiar face and trusted
-                  companion to provide care and support.
+                  At Carehub, we focus on dignity and choice. Our Home Nursing
+                  in Dubai starts with a free consultation to design a care plan
+                  that matches your family’s needs and routines. Each client
+                  gets a dedicated nurse to build trust and ensure consistent
+                  support.
                 </p>
+                <h5 className="fs-6 fw-bold" style={{ color: "#012a4a" }}>
+                  Flexible Options for Every Family
+                </h5>
+                <p>Beyond 24-hour care, we provide:</p>
+                <ul className="service_page_features_list">
+                  <li>
+                    <img src={FeatureIcon} className="me-2" />
+                    <p className="service_feature m-0 fw-normal">
+                      <span className="fw-semibold">Respite Care:</span>{" "}
+                      Short-term relief for families.
+                    </p>
+                  </li>
+                  <li>
+                    <img src={FeatureIcon} className="me-2" />
+                    <p className="service_feature m-0 fw-normal">
+                      <span className="fw-semibold">Live-In Care:</span>{" "}
+                      Full-time nurses for round-the-clock attention.
+                    </p>
+                  </li>
+                  <li>
+                    <img src={FeatureIcon} className="me-2" />
+                    <p className="service_feature m-0 fw-normal">
+                      <span className="fw-semibold">Recovery Care:</span>{" "}
+                      Post-hospitalization or illness rehabilitation.
+                    </p>
+                  </li>
+                </ul>
+                <h4 className="fs-5 fw-bold" style={{ color: "#012a4a" }}>
+                  Why Families Trust Us
+                </h4>
                 <p>
-                  In addition to our 24-hour in-home care services, we also
-                  offer respite care, live-in care, and specialized care for
-                  individuals with chronic conditions. Our team is available to
-                  answer any questions and provide more information about the
-                  services we offer.
+                  With Home Nursing Services Dubai, your loved ones stay safe,
+                  healthy, and happy at home. We prioritize clear communication,
+                  regular updates, and affordable solutions.
                 </p>
+                <h4 className="fs-5 fw-bold" style={{ color: "#012a4a" }}>
+                  Contact Us Today
+                </h4>
                 <p>
-                  With Carehub Services, you can have peace of mind knowing that
-                  your loved one is receiving the highest quality care and
-                  support in the comfort of their own home. Contact us today to
-                  learn more about how we can help you and your loved ones.
+                  Discover how Carehub’s Home Care Nursing in Dubai can ease
+                  your family’s journey. Call or message us to book a
+                  consultation and learn about our compassionate, expert
+                  services.
                 </p>
               </div>
             </Col>

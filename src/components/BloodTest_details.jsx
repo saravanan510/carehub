@@ -17,44 +17,99 @@ const BloodTest_details = () => {
 
             <div className="text-start pe-5" lg={8}>
               <h2 className="fs-3 fw-bold" style={{ color: "#012a4a" }}>
-                Blood Test at Home
+                Diagnostic Blood Test At Home in Dubai
               </h2>
               <p>
-                If you are looking for an emergency Lab test at home, Carehub is
-                with you to provide blood sample collection at Home with 24*7
-                support.Carehub partnered with top certified diagnostic centres
-                in Dubai. Going to the diagnostic centre and booking a lab test
-                is a hazardous process. So to overcome such problems Carehub
-                made simple solutions to collect blood samples from your
-                doorstep with our nurse. Booking a lab test at home is quick and
-                easy with Carehub.
+                If you need an urgent diagnostic blood test at home in Dubai,
+                Carehub offers 24x7 diagnostic test at home services with expert
+                support. We collaborate with leading certified medical labs
+                across Dubai to bring you safe, reliable testing without the
+                hassle of clinic visits. Avoid the time-consuming and stressful
+                process of visiting a diagnostic center—Carehub simplifies
+                everything by sending a qualified nurse to your doorstep for
+                blood or urine sample collection. Booking a Blood Test at Home
+                in Dubai is fast and stress-free with our user-friendly system.
               </p>
+              <h4 className="fs-5 fw-bold" style={{ color: "#012a4a" }}>
+                How It Works
+              </h4>
+
+              <ul className="service_page_features_list">
+                <li>
+                  <img src={FeatureIcon} className="me-2" />
+                  <p className="service_feature m-0 fw-normal">
+                    <span className="fw-semibold">Book Your Test:</span>{" "}
+                    Schedule online or via call, and our nurse arrives at your
+                    chosen time.
+                  </p>
+                </li>
+                <li>
+                  <img src={FeatureIcon} className="me-2" />
+                  <p className="service_feature m-0 fw-normal">
+                    <span className="fw-semibold">Sample Collection:</span> A
+                    trained professional collects blood/urine samples at home.
+                  </p>
+                </li>
+                <li>
+                  <img src={FeatureIcon} className="me-2" />
+                  <p className="service_feature m-0 fw-normal">
+                    <span className="fw-semibold">Lab Analysis:</span> Samples
+                    are safely sent to our partnered labs for testing.
+                  </p>
+                </li>
+                <li>
+                  <img src={FeatureIcon} className="me-2" />
+                  <p className="service_feature m-0 fw-normal">
+                    <span className="fw-semibold">Receive Results:</span> Get
+                    digital reports within 24-48 hours, delivered directly to
+                    your email or app.
+                  </p>
+                </li>
+              </ul>
+              <h4 className="fs-5 fw-bold" style={{ color: "#012a4a" }}>
+                Customized Care for Everyone
+              </h4>
+              <p>
+                We offer tailored health checkup packages for all ages,
+                including basic tests, specialized screenings, and comprehensive
+                full-body checkups. Whether for routine monitoring or specific
+                health needs, our flexible options ensure affordable, convenient
+                care.
+              </p>
+              <h4 className="fs-5 fw-bold" style={{ color: "#012a4a" }}>
+                Why Choose Carehub?
+              </h4>
 
               <ul className="service_page_features_list">
                 <li>
                   <img src={FeatureIcon} className="me-2" />
                   <p className="service_feature m-0 fw-semibold">
-                    Once a patient books a test, our nurse will visit your home
-                    on the agreed time slot and collects the blood/urine sample.
+                    24x7 Diagnostic Test at Home in Dubai
                   </p>
                 </li>
                 <li>
                   <img src={FeatureIcon} className="me-2" />
                   <p className="service_feature m-0 fw-semibold">
-                    After collecting blood/urine samples nurse will submit the
-                    samples to the lab for testing.
+                    Trusted, certified labs for accurate results
                   </p>
                 </li>
                 <li>
                   <img src={FeatureIcon} className="me-2" />
                   <p className="service_feature m-0 fw-semibold">
-                    Your reports will be delivered in 24-48 hours. • We provide
-                    different types of packages based on patient age and
-                    according to his need, and we also do health checkups and
-                    full-body checkups!
+                    Quick, painless sample collection
+                  </p>
+                </li>
+                <li>
+                  <img src={FeatureIcon} className="me-2" />
+                  <p className="service_feature m-0 fw-semibold">
+                    Transparent pricing and timely reports
                   </p>
                 </li>
               </ul>
+              <p>
+                Book hassle-free healthcare with Carehub—your trusted partner
+                for home diagnostic services in Dubai!
+              </p>
             </div>
           </Col>
           <Col lg={4}>

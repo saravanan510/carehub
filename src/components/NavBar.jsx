@@ -104,6 +104,9 @@ export default function NavBar() {
                 );
               })}
             </NavDropdown>
+            {/* <Nav.Link as={Link} to={"/bookbloodtest"}>
+              Blood Test
+            </Nav.Link> */}
           </Nav>
           <button
             type="button"

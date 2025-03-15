@@ -16,23 +16,67 @@ const InjectionServices_details = () => {
             </div>
 
             <div className="text-start pe-5" lg={8}>
+              {/* <h2 className="fs-3 fw-bold" style={{ color: "#012a4a" }}>
+                Medical Injection Services in Dubai
+              </h2> */}
               <h2 className="fs-3 fw-bold" style={{ color: "#012a4a" }}>
-                Injection Services at Home
+                Injection at Home Service in Dubai
               </h2>
               <p>
-                Injection services at home- Get the facility of getting
-                injections sitting at home. Which do not have to go out of the
-                house. One of the most obvious benefits of getting injection
-                services at home is saving time and energy and money on
-                traveling also. By getting injections sitting at home we can
-                stay safe in our homes. You not only save money on traveling but
-                you also enjoy injection sitting services at home. In today’s
-                time, people avoid going to the hospital because they have to
-                wait for doctors. You get a better facility in less time and at
-                affordable prices sitting at home. The care at the home facility
-                is excellent. Because sometimes we do not have time to go to the
-                hospital. For such people, getting an injection at home is a big
-                advantage. They are saved from the hassle of traveling.
+                Enjoy professional Medical Injection Services Dubai without
+                leaving your home. Our Injection at Home Service in Dubai allows
+                you to receive treatments safely and comfortably in your own
+                space. No more stressful trips to clinics or hospitals—save
+                time, energy, and travel costs while prioritizing your health.
+              </p>
+              <h4 className="fs-5 fw-bold" style={{ color: "#012a4a" }}>
+                Key Benefits
+              </h4>
+              <ul className="service_page_features_list">
+                <li>
+                  <img src={FeatureIcon} className="me-2" />
+                  <p className="service_feature m-0 fw-normal">
+                    <span className="fw-semibold">Convenience:</span> Skip long
+                    hospital waits and avoid crowded spaces.
+                  </p>
+                </li>
+                <li>
+                  <img src={FeatureIcon} className="me-2" />
+                  <p className="service_feature m-0 fw-normal">
+                    <span className="fw-semibold">Cost-Effective:</span> Save
+                    money on transportation and parking fees.
+                  </p>
+                </li>
+                <li>
+                  <img src={FeatureIcon} className="me-2" />
+                  <p className="service_feature m-0 fw-normal">
+                    <span className="fw-semibold">Safety & Comfort:</span> Stay
+                    protected at home, especially if mobility or time is a
+                    concern.
+                  </p>
+                </li>
+                <li>
+                  <img src={FeatureIcon} className="me-2" />
+                  <p className="service_feature m-0 fw-normal">
+                    <span className="fw-semibold">Quality Care:</span>{" "}
+                    Experienced medical professionals ensure safe, hygienic, and
+                    expert care.
+                  </p>
+                </li>
+              </ul>
+              <h4 className="fs-5 fw-bold" style={{ color: "#012a4a" }}>
+                Why Choose Injection Services in Dubai?
+              </h4>
+              <p>
+                Ideal for busy professionals, seniors, or anyone seeking
+                hassle-free healthcare, our Injection at Home Service in Dubai
+                offers affordable pricing and flexible scheduling. Whether
+                routine treatments or specialized medical needs, we deliver
+                reliable care tailored to your requirements.
+              </p>
+              <p>
+                Book today and experience stress-free, high-quality Medical
+                Injection Services Dubai from the comfort of your home!
               </p>
             </div>
           </Col>
