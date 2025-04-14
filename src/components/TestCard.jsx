@@ -1,19 +1,47 @@
 import React from "react";
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaDroplet } from "react-icons/fa6";
-const TestCard = () => {
+import { RiArrowDropDownLine } from "react-icons/ri";
+const TestCard = ({ test, handleAddTest, handleRemoveTest }) => {
+  const [info, setInfo] = useState(false);
+  const handleClick = () => {
+    setInfo(!info);
+  };
+  const handleChange = (e) => {
+    const checked = e.target.checked;
+    if (checked) {
+      handleAddTest(test.id);
+    } else {
+      handleRemoveTest(test.id);
+    }
+  };
   return (
     <>
       <div className="testCard">
         <Container>
           <Row>
             <Col lg={9} className="p-0">
-              <div className="d-flex align-items-center">
-                <FaDroplet />
+              <div className="d-flex align-items-start">
+                <FaDroplet className="mt-1" />
                 <div>
-                  <p className="mb-0 ms-2">Lutenizing Hormone (LH)</p>
+                  <p className="mb-0 ms-2">{test.name}</p>
+                  <div className="ms-2 mt-1">
+                    <p className="m-0">
+                      <span className="fw-semibold">AED {test.price}</span>
+                      <span className="border-start border-end px-2 mx-2">
+                        {test.biomakers}
+                      </span>
+                      <span>
+                        Biomakers
+                        <button onClick={handleClick} className="dropdown_btn">
+                          <RiArrowDropDownLine className="fs-4" />
+                        </button>
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </Col>
@@ -24,12 +52,25 @@ const TestCard = () => {
                 <input
                   type="checkbox"
                   style={{ height: "16px", width: "16px" }}
+                  onChange={handleChange}
                 />
               </div>
             </Col>
           </Row>
         </Container>
       </div>
+      {info && (
+        <div className="biomarkers">
+          <Container>
+            <p className="fw-semibold">List of Biomarkers</p>
+            <ul>
+              {test.biomakersList.map((list) => {
+                return <li>{list}</li>;
+              })}
+            </ul>
+          </Container>
+        </div>
+      )}
     </>
   );
 };

@@ -23,7 +23,12 @@ import InjectionServices from "./pages/InjectionServices";
 import BloodTest from "./pages/BloodTest";
 import HydrafacialServices from "./pages/HydrafacialServices";
 import PostStrokeRecovery from "./pages/PostStrokeRecovery";
+import SelectDateTime from "./pages/SelectDateTime";
+import PatientDetails from "./pages/PatientDetails";
+import ConfirmBooking from "./pages/ConfirmBooking";
+import RefundPolicy from "./pages/RefundPolicy";
 import { HelmetProvider } from "react-helmet-async";
+import { BookingProvider } from "./context/Context";
 
 const router = createBrowserRouter([
   {
@@ -103,8 +108,24 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
+        path: "/refund-policy",
+        element: <RefundPolicy />,
+      },
+      {
         path: "/bookbloodtest",
         element: <BookBloodTest />,
+      },
+      {
+        path: "/selectdate&time",
+        element: <SelectDateTime />,
+      },
+      {
+        path: "/patientdetails",
+        element: <PatientDetails />,
+      },
+      {
+        path: "/confirm",
+        element: <ConfirmBooking />,
       },
     ],
   },
@@ -112,10 +133,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HelmetProvider>
-      <RouterProvider router={router}>
-        <Layout />
-      </RouterProvider>
-    </HelmetProvider>
+    <BookingProvider>
+      <HelmetProvider>
+        <RouterProvider router={router}>
+          <Layout />
+        </RouterProvider>
+      </HelmetProvider>
+    </BookingProvider>
   </React.StrictMode>
 );

@@ -34,6 +34,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import RefundPolicy from "./pages/RefundPolicy";
 import Logo from "./assets/logo.png";
 import { useMediaQuery } from "react-responsive";
 import Header from "./components/Header";
@@ -114,6 +115,10 @@ let router = createBrowserRouter([
       {
         path: "/aboutus",
         element: <AboutUs />,
+      },
+      {
+        path: "/refund-policy",
+        element: <RefundPolicy />,
       },
     ],
   },

@@ -788,35 +788,53 @@ ul.breadcrumb li a:hover {
   background-color: rgb(249, 249, 249);
   padding: 60px 0;
 }
+@media only screen and (max-width: 425px) {
+  .bookbloodtest_banner {
+    padding: 24px 16px;
+  }
+}
 .bookbloodtest_img {
+  /* height: 300px; */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 300px;
+  margin-bottom: 24px;
   border-radius: var(--radius-2);
+  background-color: #b5c5c9;
 }
-.bookbloodtest_img img {
-  max-height: 100%;
+@media only screen and (min-device-width: 475px) and (max-device-width: 768px) {
+  .bookbloodtest_img {
+    height: 300px;
+  }
+}
 
-  /* Optional: To maintain aspect ratio */
-  object-fit: contain;
-}
 .bookbloodtest_tag {
   background-color: #ffd500;
   border-radius: 4px;
 }
 .price_card {
-  height: 400px;
-  padding: 24px;
   background-color: rgb(249, 249, 249);
   border-radius: 4px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .popular {
   background-color: #003f4e;
   color: #f5faf7;
+}
+.popular p {
+  color: #f5faf7;
+}
+.popular_button {
+  background-color: yellow;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
 }
 .selectTest {
   background-color: rgb(249, 249, 249);
@@ -837,4 +855,79 @@ ul.breadcrumb li a:hover {
   background-color: white;
   padding: 12px;
   border-radius: 6px;
+}
+.dropdown_btn {
+  background-color: white;
+}
+.biomarkers {
+  background-color: rgb(228, 228, 228);
+  border-radius: 8px;
+  margin-top: 12px;
+  padding: 12px;
+}
+.cart_top {
+  background-color: #003f4e;
+  text-align: center;
+}
+.cart_top p {
+  color: white;
+  padding: 12px;
+  margin: 0px;
+}
+.cart_bottom {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.cart_bottom p {
+  margin: 0px;
+}
+.cart_button {
+  background-color: #009b45;
+  color: white;
+  padding: 6px 32px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.cart_button a {
+  text-decoration: none;
+  color: white;
+}
+.date_picker {
+  background-color: rgb(249, 249, 249);
+}
+.custom-input {
+  background-color: rgb(249, 249, 249);
+}
+.custom-datepicker {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgb(249, 249, 249);
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+.custom-datepicker input {
+  background-color: inherit;
+}
+.custom-timepicker {
+  background-color: rgb(249, 249, 249);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.801);
+  margin-right: 12px;
+}
+.custom-timepicker:hover {
+  background-color: #e2ece6;
+}
+.custom-timepicker-selected {
+  background-color: #009b45;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-right: 12px;
 }
