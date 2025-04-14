@@ -3,10 +3,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../components/ScrollTop";
 
 const RefundPolicy = () => {
   return (
     <>
+      <ScrollToTop />
       <div className="servicepage_banner">
         <Container>
           <h2 className="fs-1 fw-semibold text-white">Refund Policy</h2>
