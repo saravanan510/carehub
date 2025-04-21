@@ -191,8 +191,6 @@ function Layout() {
   let navigation = useNavigation();
   const [hideService, setHideService] = useState<any>("");
 
-  console.log("hideService", hideService);
-
   const isMobile: any = useMediaQuery({ maxWidth: 991 });
 
   let getKey = React.useCallback(
@@ -208,7 +206,6 @@ function Layout() {
 
   const HandleChange = (e) => {
     setHideService(e.target.innerHTML);
-    console.log("checkCode", e.target.innerHTML);
   };
 
   const LinkStyles = {
@@ -218,7 +215,6 @@ function Layout() {
   };
 
   const dataget = services.find((data) => data.name === hideService);
-  console.log("dataget", dataget);
 
   return (
     <>

@@ -15,6 +15,12 @@ const SelectDateTime = () => {
   const handleTime = (value) => {
     setTime(value);
   };
+
+  useEffect(() => {
+    handleDetails({ ...bookingDetails, date: date, time: time });
+  }, [setDate, setTime]);
+
+  console.log("bookingDetails", bookingDetails);
   return (
     <>
       <section>

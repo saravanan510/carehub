@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ScrollToTop from "../components/ScrollTop";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -11,11 +11,25 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 import SelectTest from "../components/SelectTest";
 import Cart from "../components/Cart";
 import testData from "../utils/testData";
+import { useBookingDetails } from "../context/Context";
 
 const BookBloodTest = () => {
   const [selectedTest, setSelectedTest] = useState([]);
+  const { bookingDetails, handleDetails } = useBookingDetails();
 
-  console.log("selectedTest", selectedTest);
+  useEffect(() => {
+    let selectedTestData = [];
+    selectedTest.forEach((testID) => {
+      selectedTestData.push(
+        testData.find((test) => {
+          return test.id === testID;
+        })
+      );
+    });
+
+    handleDetails({ ...bookingDetails, tests: selectedTestData });
+  }, [selectedTest]);
+
   const handleAddTest = (id) => {
     setSelectedTest((prevSelectedTest) => [...prevSelectedTest, id]);
   };

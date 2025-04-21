@@ -70,7 +70,7 @@ const Footer_bottom = () => {
             </div>
 
             <h6 className="mb-0">
-              First Floor, B-4, Gold Building, Near Bus stand, Al-Karama, Dubai,
+              First Floor, M-4, Gold Building, Near Bus stand, Al-Karama, Dubai,
               U.A.E
             </h6>
           </Col>
