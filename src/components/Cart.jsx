@@ -19,7 +19,7 @@ const Cart = ({ selectedTest }) => {
     });
     return [matchedTest.price, matchedTest.biomakers];
   });
-  console.log("matched", matched);
+
   const totalPrice = matched.reduce((acc, cv) => {
     return (acc = acc + cv[0]);
   }, 0);
@@ -30,19 +30,19 @@ const Cart = ({ selectedTest }) => {
   return (
     <div className="fixed-bottom">
       <div className="cart_top">
-        <p className="fs-5">
-          Add <span className="fw-semibold">AED 250</span> more to get FREE
+        <p style={{ fontSize: "16px" }}>
+          Add <span className="fw-semibold">AED 250</span> more to get free
           collection
         </p>
       </div>
-      <div className="cart_bottom">
+      <div className="cart_bottom" style={{ padding: "12px" }}>
         <div>
           <p>
-            <span className="fs-5 fw-semibold">Add AED {totalPrice}</span>({" "}
+            <span style={{ fontWeight: "bold" }}>Add AED {totalPrice}</span>({" "}
             {totalTest}
             Tests )
           </p>
-          <p>Get report in 3 days</p>
+          <p style={{ fontSize: "15px" }}>Get report in 3 days</p>
         </div>
         <div>
           <button type="button" className="cart_button">

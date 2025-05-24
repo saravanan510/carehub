@@ -27,8 +27,13 @@ import SelectDateTime from "./pages/SelectDateTime";
 import PatientDetails from "./pages/PatientDetails";
 import ConfirmBooking from "./pages/ConfirmBooking";
 import RefundPolicy from "./pages/RefundPolicy";
+import PaymentSuccess from "./pages/PaymentSuccess";
+import PaymentCancel from "./pages/PaymentCancel";
 import { HelmetProvider } from "react-helmet-async";
 import { BookingProvider } from "./context/Context";
+import Login from "./admin/page/Login";
+import CCPaymentPage from "./pages/CCPaymentPage";
+import Dashboard from "./admin/page/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -127,7 +132,27 @@ const router = createBrowserRouter([
         path: "/confirm",
         element: <ConfirmBooking />,
       },
+      {
+        path: "/payment",
+        element: <CCPaymentPage />,
+      },
+      {
+        path: "/paymentSuccess",
+        element: <PaymentSuccess />,
+      },
+      {
+        path: "/paymentCancel",
+        element: <PaymentCancel />,
+      },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 ]);
 

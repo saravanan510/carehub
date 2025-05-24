@@ -48,7 +48,7 @@ const MedicalTourism_details = () => {
 
           <Col lg={4}>
             <OtherServices className="mb-4" />
-            <BookAppointment />
+            <BookAppointment currentService={"Medical Tourism"} />
           </Col>
         </Row>
       </Container>

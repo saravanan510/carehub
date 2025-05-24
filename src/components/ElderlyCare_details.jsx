@@ -123,7 +123,7 @@ const ElderlyCare_details = () => {
           </Col>
           <Col lg={4}>
             <OtherServices className="mb-4" />
-            <BookAppointment />
+            <BookAppointment currentService={"Elderly Care"} />
           </Col>
           <Col className="text-start pe-5" lg={9}>
             <Row>

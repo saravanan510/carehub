@@ -9,18 +9,22 @@ import { useBookingDetails } from "../context/Context";
 import { MdDateRange } from "react-icons/md";
 const SelectDateTime = () => {
   const [date, setDate] = useState(new Date());
+  const currentDate = new Date().toISOString().split("T")[0];
   const [time, setTime] = useState("");
   const { bookingDetails, handleDetails } = useBookingDetails();
 
-  const handleTime = (value) => {
-    setTime(value);
+  const timings = {
+    morning: ["10:00 Am", "10:30 Am", "11:00 Am", "11:30 Am"],
+    afternoon: ["01:00 Pm", "01:30 Pm", "02:00 Pm", "02:30 Pm"],
+    evening: ["06:00 Pm", "06:30 Pm", "07:00 Pm", "07:30 Pm"],
   };
 
-  useEffect(() => {
-    handleDetails({ ...bookingDetails, date: date, time: time });
-  }, [setDate, setTime]);
+  const handleBookAppointment = () => {
+    const update = { ...bookingDetails };
+    (update.time = time), (update.date = date);
+    handleDetails(update);
+  };
 
-  console.log("bookingDetails", bookingDetails);
   return (
     <>
       <section>
@@ -33,8 +37,11 @@ const SelectDateTime = () => {
                 <DatePicker
                   // showIcon
                   // className="date_picker"
+                  minDate={currentDate}
                   selected={date}
-                  onChange={(date) => setDate(date)}
+                  onChange={(e) => {
+                    setDate(e);
+                  }}
                   // icon={<MdDateRange className="fs-5 custom-icon-spacing" />}
                   customInput={
                     <div className="custom-datepicker">
@@ -48,132 +55,68 @@ const SelectDateTime = () => {
                 <p className="mb-2 fw-semibold">Choose Time</p>
                 <div className="mb-2">
                   <p className="mb-2 me-4">Morning</p>
-                  <div>
-                    <button
-                      className={`${
-                        time == "10:00"
-                          ? "custom-timepicker-selected"
-                          : "custom-timepicker"
-                      }`}
-                      onClick={() => handleTime("10:00")}
-                    >
-                      10:00 AM
-                    </button>
-                    <button
-                      className={`${
-                        time == "10:30"
-                          ? "custom-timepicker-selected"
-                          : "custom-timepicker"
-                      }`}
-                      onClick={() => handleTime("10:30")}
-                    >
-                      10:30 AM
-                    </button>
-                    <button
-                      className={`${
-                        time == "11:00"
-                          ? "custom-timepicker-selected"
-                          : "custom-timepicker"
-                      }`}
-                      onClick={() => handleTime("11:00")}
-                    >
-                      11:00 AM
-                    </button>
-                  </div>
+                  {timings.morning.map((el, index) => {
+                    return (
+                      <button
+                        className={`${
+                          time === el
+                            ? "custom-timepicker-selected"
+                            : "custom-timepicker"
+                        }`}
+                        onClick={() => setTime(el)}
+                      >
+                        {el}
+                      </button>
+                    );
+                  })}
                 </div>
                 <div className="mb-2">
                   <p className="mb-2 me-4">Afternoon</p>
-                  <div>
-                    <button
-                      className={`${
-                        time == "01:00"
-                          ? "custom-timepicker-selected"
-                          : "custom-timepicker"
-                      }`}
-                      onClick={() => handleTime("01:00")}
-                    >
-                      01:00 PM
-                    </button>
-                    <button
-                      className={`${
-                        time == "02:00"
-                          ? "custom-timepicker-selected"
-                          : "custom-timepicker"
-                      }`}
-                      onClick={() => handleTime("02:00")}
-                    >
-                      02:00 PM
-                    </button>
-                    <button
-                      className={`${
-                        time == "03:00"
-                          ? "custom-timepicker-selected"
-                          : "custom-timepicker"
-                      }`}
-                      onClick={() => handleTime("03:00")}
-                    >
-                      03:00 PM
-                    </button>
-                  </div>
+                  {timings.afternoon.map((el, index) => {
+                    return (
+                      <button
+                        className={`${
+                          time === el
+                            ? "custom-timepicker-selected"
+                            : "custom-timepicker"
+                        }`}
+                        onClick={() => setTime(el)}
+                      >
+                        {el}
+                      </button>
+                    );
+                  })}
                 </div>
                 <div className="mb-2">
                   <p className="mb-2 me-4">Evening</p>
-                  <div>
-                    <button
-                      className={`${
-                        time == "06:00"
-                          ? "custom-timepicker-selected"
-                          : "custom-timepicker"
-                      }`}
-                      onClick={() => handleTime("06:00")}
-                    >
-                      06:00 PM
-                    </button>
-                    <button
-                      className={`${
-                        time == "07:00"
-                          ? "custom-timepicker-selected"
-                          : "custom-timepicker"
-                      }`}
-                      onClick={() => handleTime("07:00")}
-                    >
-                      07:00 PM
-                    </button>
-                    <button
-                      className={`${
-                        time == "08:00"
-                          ? "custom-timepicker-selected"
-                          : "custom-timepicker"
-                      }`}
-                      onClick={() => handleTime("08:00")}
-                    >
-                      08:00 PM
-                    </button>
-                  </div>
+                  {timings.evening.map((el, index) => {
+                    return (
+                      <button
+                        className={`${
+                          time === el
+                            ? "custom-timepicker-selected"
+                            : "custom-timepicker"
+                        }`}
+                        onClick={() => setTime(el)}
+                      >
+                        {el}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
             </div>
-            {/* <div>
-              <p className="m-0">Choose Date</p>
-              <select
-                className="date_picker"
-                value={time}
-                onChange={(e) => setTime(e.target.value)}
+
+            <div style={{ marginTop: "20px" }}>
+              <button
+                className="custom-button me-2"
+                onClick={handleBookAppointment}
               >
-                <option value="10:00 - 10:30">10:00 - 10:30</option>
-                <option value="10:30 - 11:00">10:30 - 11:00</option>
-                <option value="11:00 - 11:30">11:00 - 11:30</option>
-                <option value="11:30 - 12:00">11:30 - 12:00</option>
-                <option value="12:00 - 12:30">12:00 - 12:30</option>
-                <option value="12:30 - 01:00">12:30 - 01:00</option>
-                <option value="01:00 - 01:30">01:00 - 01:30</option>
-              </select>
-            </div> */}
-            <div>
-              <button className="custom-button me-2">
                 <Link to={"/patientdetails"}>Book Appointment</Link>
               </button>
-              <button className="custom-button">Cancel</button>
+              <button className="custom-button-secondary">
+                <Link to={"/bookbloodtest"}>Cancel</Link>
+              </button>
             </div>
           </Row>
         </Container>

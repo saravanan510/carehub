@@ -3,8 +3,9 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { FaDroplet } from "react-icons/fa6";
+import { MdOutlineWaterDrop } from "react-icons/md";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { RiArrowDropUpLine } from "react-icons/ri";
 const TestCard = ({ test, handleAddTest, handleRemoveTest }) => {
   const [info, setInfo] = useState(false);
   const handleClick = () => {
@@ -25,19 +26,31 @@ const TestCard = ({ test, handleAddTest, handleRemoveTest }) => {
           <Row>
             <Col lg={9} className="p-0">
               <div className="d-flex align-items-start">
-                <FaDroplet className="mt-1" />
+                <MdOutlineWaterDrop
+                  className="mt-1 fs-5"
+                  style={{ color: "#009b45" }}
+                />
                 <div>
                   <p className="mb-0 ms-2">{test.name}</p>
                   <div className="ms-2 mt-1">
                     <p className="m-0">
-                      <span className="fw-semibold">AED {test.price}</span>
+                      <span
+                        className="fw-semibold"
+                        style={{ color: "#009b45" }}
+                      >
+                        AED {test.price}
+                      </span>
                       <span className="border-start border-end px-2 mx-2">
-                        {test.biomakers}
+                        {test.biomakersList.length}
                       </span>
                       <span>
                         Biomakers
                         <button onClick={handleClick} className="dropdown_btn">
-                          <RiArrowDropDownLine className="fs-4" />
+                          {info ? (
+                            <RiArrowDropUpLine className="fs-4" />
+                          ) : (
+                            <RiArrowDropDownLine className="fs-4" />
+                          )}
                         </button>
                       </span>
                     </p>

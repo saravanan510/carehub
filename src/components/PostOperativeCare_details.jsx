@@ -121,7 +121,7 @@ const PostOperativeCare_details = () => {
             </Col>
             <Col lg={4}>
               <OtherServices className="mb-4" />
-              <BookAppointment />
+              <BookAppointment currentService={"Post Operative Care"} />
             </Col>
           </Row>
         </Container>

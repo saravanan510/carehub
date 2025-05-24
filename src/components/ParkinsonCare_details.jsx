@@ -97,7 +97,7 @@ const ParkinsonCare_details = () => {
           </Col>
           <Col lg={4}>
             <OtherServices className="mb-4" />
-            <BookAppointment />
+            <BookAppointment currentService={"Parkinson Care"} />
           </Col>
         </Row>
       </Container>

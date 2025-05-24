@@ -36,7 +36,7 @@ const ParalyticCare_details = () => {
           </Col>
           <Col lg={4}>
             <OtherServices className="mb-4" />
-            <BookAppointment />
+            <BookAppointment currentService={"Paralytic Care"} />
           </Col>
         </Row>
       </Container>

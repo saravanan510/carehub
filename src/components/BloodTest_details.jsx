@@ -114,7 +114,7 @@ const BloodTest_details = () => {
           </Col>
           <Col lg={4}>
             <OtherServices className="mb-4" />
-            <BookAppointment />
+            <BookAppointment currentService={"Blood Test"} />
           </Col>
         </Row>
       </Container>

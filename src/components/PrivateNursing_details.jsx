@@ -156,7 +156,7 @@ const PrivateNursing_details = () => {
             </Col>
             <Col lg={4}>
               <OtherServices className="mb-4" />
-              <BookAppointment />
+              <BookAppointment currentService={"Home Nursing services"} />
             </Col>
           </Row>
         </Container>

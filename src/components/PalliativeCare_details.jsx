@@ -70,7 +70,7 @@ const PalliativeCare_details = () => {
 
           <Col lg={4}>
             <OtherServices className="mb-4" />
-            <BookAppointment />
+            <BookAppointment currentService={"Palliative Care"} />
           </Col>
         </Row>
       </Container>

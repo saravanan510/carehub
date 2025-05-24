@@ -83,7 +83,7 @@ const PysiotheraphyServices_details = () => {
           </Col>
           <Col lg={4}>
             <OtherServices className="mb-4" />
-            <BookAppointment />
+            <BookAppointment currentService={"Physiotherapy Services"} />
           </Col>
         </Row>
       </Container>

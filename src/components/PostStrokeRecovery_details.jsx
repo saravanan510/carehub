@@ -65,7 +65,7 @@ const PostStrokeRecovery_details = () => {
             </Col>
             <Col lg={4}>
               <OtherServices className="mb-4" />
-              <BookAppointment />
+              <BookAppointment currentService={"Post Stroke Recovery"} />
             </Col>
           </Row>
         </Container>

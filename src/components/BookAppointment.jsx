@@ -1,6 +1,8 @@
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
+import { useEffect, useState } from "react";
+import axios from "../utils/axios";
 import { AnimatedOnScroll } from "react-animated-css-onscroll";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const services = [
   "Home Nursing services",
   "Post Operative Care",
@@ -19,7 +21,7 @@ const services = [
   "Post Stroke Recovery",
 ];
 
-const BookAppointment = () => {
+const BookAppointment = ({ currentService }) => {
   const [form, setForm] = useState({
     fullName: "",
     email: "",
@@ -27,27 +29,61 @@ const BookAppointment = () => {
     date: "",
     service: "",
   });
+  const [loader, setLoader] = useState(false);
+  const currentDate = new Date().toISOString().split("T")[0];
+
+  const notifySuccess = () => toast.success("Appointment Booked successfully!");
+  const notifyError = () => toast.error("Error in Appointment Booking");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    setForm((prev) => {
+      return { ...prev, service: currentService };
+    });
+  }, [currentService]);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(form);
-    emailjs
-      .send("service_rfhez58", "template_yvq22yp", form, {
-        publicKey: "9oAfAPIpODABx48KN",
-      })
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (err) => {
-          console.log("FAILED...", err);
+    console.log("Form data submitted:", form);
+    setLoader(true);
+
+    try {
+      const sendMailResponse = await axios.post(
+        "api/send-email", // Ensure this URL is correct
+        form,
+        {
+          headers: {
+            "Content-Type": "application/json", // Ensure the content type is application/json
+          },
         }
       );
+      console.log("Email sent successfully:", sendMailResponse.data);
+      setLoader(false);
+      notifySuccess();
+      setForm({
+        fullName: "",
+        email: "",
+        phoneNumber: "",
+        date: "",
+        service: "",
+      });
+    } catch (error) {
+      setLoader(false);
+      notifyError();
+      if (error.response) {
+        console.error("Error response from server:", error.response.data);
+      } else if (error.request) {
+        console.error("No response received from server:", error.request);
+      } else {
+        console.error("Error setting up the request:", error.message);
+      }
+    }
   };
+
   return (
     <AnimatedOnScroll animationIn="animate__slideInUp ">
       <div className="booking text-start rounded-4 animate__animated ">
@@ -100,6 +136,7 @@ const BookAppointment = () => {
             onChange={handleChange}
             className="border-0 mb-3 p-2"
             required
+            min={currentDate}
           />
           <br />
           <label className="fw-semibold">Choose Service</label>
@@ -117,8 +154,30 @@ const BookAppointment = () => {
             })}
           </select>
           <br />
-          <input type="submit" className="formbtn fw-semibold" />
+          {form.service !== "Select category" && form.service !== "" && (
+            <div
+              style={{
+                padding: "6px 8px",
+                background: "rgb(249, 249, 249, 0.66)",
+                fontSize: "14px",
+                fontWeight: "500",
+                borderRadius: "4px",
+                // color: "#009b45",
+              }}
+            >
+              Free Booking
+            </div>
+          )}
+
+          <input
+            type="submit"
+            className="formbtn fw-semibold"
+            value={loader ? "Booking..." : "Book Appointment"}
+          />
         </form>
+      </div>
+      <div>
+        <ToastContainer position="bottom-left" />
       </div>
     </AnimatedOnScroll>
   );

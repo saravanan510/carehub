@@ -46,7 +46,7 @@ const HydrafacialServices_details = () => {
           </Col>
           <Col lg={4}>
             <OtherServices className="mb-4" />
-            <BookAppointment />
+            <BookAppointment currentService={"Hydrafacial Services"} />
           </Col>
         </Row>
       </Container>

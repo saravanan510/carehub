@@ -223,7 +223,7 @@ const VentilatorCare_details = () => {
             </Col>
             <Col lg={4}>
               <OtherServices className="mb-4" />
-              <BookAppointment />
+              <BookAppointment currentService={"Ventilator Care"} />
             </Col>
           </Row>
         </Container>

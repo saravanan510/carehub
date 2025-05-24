@@ -82,7 +82,7 @@ const InjectionServices_details = () => {
           </Col>
           <Col lg={4}>
             <OtherServices className="mb-4" />
-            <BookAppointment />
+            <BookAppointment currentService={"Injection Services"} />
           </Col>
         </Row>
       </Container>
